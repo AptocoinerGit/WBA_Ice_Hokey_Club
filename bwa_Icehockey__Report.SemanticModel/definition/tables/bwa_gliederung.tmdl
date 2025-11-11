@@ -1,0 +1,40 @@
+table bwa_gliederung
+	lineageTag: 2fa17516-13aa-4b20-ae4d-b543f2c3a277
+
+	column berichtsebene1
+		dataType: string
+		lineageTag: cbf83a41-a693-4244-b8e1-005140c19b3e
+		summarizeBy: none
+		sourceColumn: berichtsebene1
+
+		annotation SummarizationSetBy = Automatic
+
+	column berichtsebene2
+		dataType: string
+		lineageTag: 1b1a68b5-ef38-47f9-8064-7aa23c60e001
+		summarizeBy: none
+		sourceColumn: berichtsebene2
+
+		annotation SummarizationSetBy = Automatic
+
+	column berichtsebene3
+		dataType: string
+		lineageTag: 772d7814-0d8f-44c4-b116-faceda266ffa
+		summarizeBy: none
+		sourceColumn: berichtsebene3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition bwa_gliederung = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_bwa_gliederung = Source{[Schema="dbo",Item="bwa_gliederung"]}[Data]
+				in
+				    dbo_bwa_gliederung
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

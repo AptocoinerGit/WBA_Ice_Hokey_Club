@@ -1,0 +1,81 @@
+{
+  "config": "{\"version\":\"5.67\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU10\",\"type\":2,\"version\":{\"visual\":\"2.1.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU10",
+            "path": "BaseThemes/CY25SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "BWA",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "bae512962fa406bf5e3a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"19b431a0336db57b5b4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":462.7333959125867,\"y\":21.585231296213955,\"z\":1000,\"width\":802.7007888279564,\"height\":68.80292475668197,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MetricSelector.Metric\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MetricSelector\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Metric\"},\"Name\":\"MetricSelector.Metric\",\"NativeReferenceName\":\"Metric\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.80,
+          "width": 802.70,
+          "x": 462.73,
+          "y": 21.59,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"1c06733ec2e1234260eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":12.228325770241224,\"y\":102.71793647002627,\"z\":0,\"width\":1268.0773823740149,\"height\":617.5304513971818,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"scrbwa_gliederung.berichtsebene1\",\"active\":true},{\"queryRef\":\"scrbwa_gliederung.berichtsebene2\",\"active\":true},{\"queryRef\":\"scrbwa_gliederung.berichtsebene3\",\"active\":true},{\"queryRef\":\"DIM_Sachkonten.sachkontonummer- und Name\",\"active\":true}],\"Values\":[{\"queryRef\":\"Buchungen.Selected Metric Value\"}],\"Columns\":[{\"queryRef\":\"MetricSelector.Metric\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Buchungen\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MetricSelector\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"scrbwa_gliederung\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DIM_Sachkonten\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Selected Metric Value\"},\"Name\":\"Buchungen.Selected Metric Value\",\"NativeReferenceName\":\"Selected Metric Value\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Metric\"},\"Name\":\"MetricSelector.Metric\",\"NativeReferenceName\":\"Metric\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene1\"},\"Name\":\"scrbwa_gliederung.berichtsebene1\",\"NativeReferenceName\":\"berichtsebene1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene2\"},\"Name\":\"scrbwa_gliederung.berichtsebene2\",\"NativeReferenceName\":\"berichtsebene2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene3\"},\"Name\":\"scrbwa_gliederung.berichtsebene3\",\"NativeReferenceName\":\"berichtsebene3\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sachkontonummer- und Name\"},\"Name\":\"DIM_Sachkonten.sachkontonummer- und Name\",\"NativeReferenceName\":\"sachkontonummer- und Name\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene1\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene1\"}}],\"isPinned\":true},{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene2\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene2\"}}],\"isPinned\":true},{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene3\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene3\"}}],\"isPinned\":true},{\"queryRefs\":[\"DIM_Sachkonten.sachkontonummer- und Name\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"null\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Betriebsergebnis'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Gesamtkosten'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Personalkosten'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Reparatur und Instandhaltung'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Sonstige Kosten'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Versicherungen und Beiträge'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Warenabgabekosten'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Werbe- und Reisekosten'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Gesamtleistung'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Sonstige betriebliche Erträge'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Umsatzerlöse'\"}}],\"isToggled\":true}]}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"578.6300470583144D\"}}}},\"selector\":{\"metadata\":\"scrbwa_gliederung.berichtsebene1\"}}]}}}",
+          "filters": "[]",
+          "height": 617.53,
+          "width": 1268.08,
+          "x": 12.23,
+          "y": 102.72,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"951abfe3f1f6f97befe7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.37784694432093,\"y\":0,\"z\":2000,\"width\":288.70246858686164,\"height\":90.38815605289594,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimDate.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"DimDate.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-04-16T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2026-04-01T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2025-04-16T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2026-04-02T00:00:00'\"}}}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 90.39,
+          "width": 288.70,
+          "x": 32.38,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "BWA_Drillthrough",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "df6af9dbd490350face8",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"c168a0eb4903649462f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.076000856347676,\"y\":87.6900021408692,\"z\":0,\"width\":747.3886336314082,\"height\":543.678013273389,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Buchungen.Buchungsbetrag\"}],\"Rows\":[{\"queryRef\":\"scrbwa_gliederung.berichtsebene1\",\"active\":true},{\"queryRef\":\"scrbwa_gliederung.berichtsebene2\",\"active\":true},{\"queryRef\":\"scrbwa_gliederung.berichtsebene3\",\"active\":true},{\"queryRef\":\"DIM_Sachkonten.sachkontonummer- und Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Buchungen\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"scrbwa_gliederung\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DIM_Sachkonten\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Buchungsbetrag\"},\"Name\":\"Buchungen.Buchungsbetrag\",\"NativeReferenceName\":\"Buchungsbetrag\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene1\"},\"Name\":\"scrbwa_gliederung.berichtsebene1\",\"NativeReferenceName\":\"berichtsebene1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene2\"},\"Name\":\"scrbwa_gliederung.berichtsebene2\",\"NativeReferenceName\":\"berichtsebene2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"berichtsebene3\"},\"Name\":\"scrbwa_gliederung.berichtsebene3\",\"NativeReferenceName\":\"berichtsebene3\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sachkontonummer- und Name\"},\"Name\":\"DIM_Sachkonten.sachkontonummer- und Name\",\"NativeReferenceName\":\"sachkontonummer- und Name\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene1\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene1\"}}],\"isPinned\":true},{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene2\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene2\"}}],\"isPinned\":true},{\"queryRefs\":[\"scrbwa_gliederung.berichtsebene3\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"scrbwa_gliederung\"}},\"Property\":\"berichtsebene3\"}}],\"isPinned\":true},{\"queryRefs\":[\"DIM_Sachkonten.sachkontonummer- und Name\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Betriebsergebnis'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Gesamtkosten'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Kraftfahrzeugkosten'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Personalkosten'\"}}],\"isToggled\":true}]}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 543.68,
+          "width": 747.39,
+          "x": 35.08,
+          "y": 87.69,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

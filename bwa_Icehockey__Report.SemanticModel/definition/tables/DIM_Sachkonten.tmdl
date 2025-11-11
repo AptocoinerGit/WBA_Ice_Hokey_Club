@@ -1,0 +1,51 @@
+table DIM_Sachkonten
+	lineageTag: 0aad53e5-8b53-4fc0-a8ff-163e2c0b0abb
+
+	column sachkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a7fc3d4-8c73-4b30-a03e-c6b622d7f783
+		summarizeBy: none
+		sourceColumn: sachkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkontoname
+		dataType: string
+		lineageTag: 4efb0c96-cf2d-4500-b24e-c1329549a226
+		summarizeBy: none
+		sourceColumn: sachkontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'sachkontonummer- und Name'
+		dataType: string
+		lineageTag: ac55d786-1640-40df-b952-b7e7724820ac
+		summarizeBy: none
+		sourceColumn: sachkontonummer- und Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_Sachkonten = m
+		mode: import
+		queryGroup: DimTable
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis = Source{[Schema="dbo",Item="buchungen_basis"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_buchungen_basis,{"master_id", "buchungsnummer", "erstellungsdatum", "buchungstext", "sachkonto", "sachkontoname", "personenkonto", "personenkontoname", "soll", "haben", "betrag", "kostenstellen_und_name", "eingangsrechnung", "ausgangsrechnung"}),
+				    #"Removed Other Columns1" = Table.SelectColumns(#"Removed Other Columns",{"sachkonto", "sachkontoname"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Removed Other Columns1", "sachkonto", "sachkonto - Copy"),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Duplicated Column", "sachkontoname", "sachkontoname - Copy"),
+				    #"Merged Columns" = Table.CombineColumns(Table.TransformColumnTypes(#"Duplicated Column1", {{"sachkonto - Copy", type text}}, "en-IN"),{"sachkonto - Copy", "sachkontoname - Copy"},Combiner.CombineTextByDelimiter(" ", QuoteStyle.None),"sachkontonummer- und Name"),
+				    #"Appended Query" = Table.Combine({#"Merged Columns", buchungen_basis_DIm}),
+				    #"Removed Duplicates" = Table.Distinct(#"Appended Query"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Duplicates",{{"sachkonto", Int64.Type}, {"sachkontoname", type text}, {"sachkontonummer- und Name", type text}}),
+				    #"Removed Duplicates1" = Table.Distinct(#"Changed Type")
+				in
+				    #"Removed Duplicates1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

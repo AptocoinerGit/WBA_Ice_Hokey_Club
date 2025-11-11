@@ -1,0 +1,182 @@
+table kreditoren_gesamtumsatz
+	lineageTag: e0817941-3ae2-4f86-855f-f65eb73e9301
+
+	column master_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3393a3d6-e019-4a46-8eb3-44a99ff06d32
+		summarizeBy: sum
+		sourceColumn: master_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column belegnummer
+		dataType: string
+		lineageTag: f078b939-f590-4467-965c-66671ba8ce55
+		summarizeBy: none
+		sourceColumn: belegnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontonummer
+		dataType: int64
+		formatString: 0
+		lineageTag: d3cc4949-d79f-491b-8544-20cf9db1d25b
+		summarizeBy: sum
+		sourceColumn: kontonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontobezeichnungn
+		dataType: string
+		lineageTag: bffe0d2d-58b8-41bb-a875-18ea9ce8221a
+		summarizeBy: none
+		sourceColumn: kontobezeichnungn
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6b4a280b-692f-4c2b-b244-f84ec03ff220
+		summarizeBy: none
+		sourceColumn: buchungsdatum
+
+		variation Variation
+			isDefault
+			relationship: dafab173-fe01-41ac-863f-d262bb80b8a5
+			defaultHierarchy: LocalDateTable_fcf47397-a376-4234-8fa7-3664cd12a0ee.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column belegdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fec27df3-22d7-4ac5-b124-079440a54b6d
+		summarizeBy: none
+		sourceColumn: belegdatum
+
+		variation Variation
+			isDefault
+			relationship: c55abe88-0b04-40cf-8a2c-5acde86e1ad0
+			defaultHierarchy: LocalDateTable_9f20e394-4089-4567-86ef-e5bfdaab298e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column erstellt_am
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fd43ac51-01e7-42c2-9b54-96472d591d13
+		summarizeBy: none
+		sourceColumn: erstellt_am
+
+		variation Variation
+			isDefault
+			relationship: 8e04bd09-cdd9-489c-8a06-859c572b33b0
+			defaultHierarchy: LocalDateTable_eb6e3d34-6d53-4bcd-951a-ea517f8ea2bc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fälligkeitsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8eec0e36-00fe-45d2-939e-8d97b7c46096
+		summarizeBy: none
+		sourceColumn: fälligkeitsdatum
+
+		variation Variation
+			isDefault
+			relationship: 86d3e140-d6b1-4176-a6b9-1117699c2d05
+			defaultHierarchy: LocalDateTable_976c6bfe-5111-4cce-915b-ae93284cbb52.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column betrag
+		dataType: double
+		lineageTag: 2302b18a-f232-4760-84f7-f88b78857c3c
+		summarizeBy: sum
+		sourceColumn: betrag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column offener_betrag
+		dataType: string
+		lineageTag: c0241f1c-6ad4-426d-add3-1815ac753d9e
+		summarizeBy: none
+		sourceColumn: offener_betrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column sollbetrag
+		dataType: string
+		lineageTag: 40e94f16-9975-446c-9bbd-4579562a78be
+		summarizeBy: none
+		sourceColumn: sollbetrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column habenbetrag
+		dataType: string
+		lineageTag: 4495a65b-fa48-42e3-b446-e80596f82722
+		summarizeBy: none
+		sourceColumn: habenbetrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungstext
+		dataType: string
+		lineageTag: 989eaaa8-65a1-4c5f-8501-330e75907e64
+		summarizeBy: none
+		sourceColumn: buchungstext
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungszeilentext
+		dataType: string
+		lineageTag: 1ef4b3e2-0fdb-4769-983d-076b73e238e7
+		summarizeBy: none
+		sourceColumn: buchungszeilentext
+
+		annotation SummarizationSetBy = Automatic
+
+	column interne_belegnummer
+		dataType: string
+		lineageTag: e4755ef8-44af-4dbc-a4f7-d6c55c61cf81
+		summarizeBy: none
+		sourceColumn: interne_belegnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsart_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ebdff83-ed6f-4e8c-9953-de9a030baece
+		summarizeBy: sum
+		sourceColumn: zahlungsart_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kreditoren_gesamtumsatz = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_kreditoren_gesamtumsatz = Source{[Schema="dbo",Item="kreditoren_gesamtumsatz"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_kreditoren_gesamtumsatz,{{"master_id", Int64.Type}, {"belegnummer", type text}, {"kontonummer", Int64.Type}, {"kontobezeichnungn", type text}, {"buchungsdatum", type date}, {"belegdatum", type date}, {"erstellt_am", type date}, {"fälligkeitsdatum", type date}, {"betrag", type number}, {"offener_betrag", type text}, {"sollbetrag", type text}, {"habenbetrag", type text}, {"buchungstext", type text}, {"buchungszeilentext", type text}, {"interne_belegnummer", type text}, {"zahlungsart_id", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

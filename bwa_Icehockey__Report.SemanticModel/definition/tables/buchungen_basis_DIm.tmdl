@@ -1,0 +1,48 @@
+table buchungen_basis_DIm
+	lineageTag: 9fc2ba08-9544-4fdd-9cfb-9948c38cd379
+
+	column sachkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ac30efb-ac6f-4868-8f2d-948dfe149805
+		summarizeBy: none
+		sourceColumn: sachkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkontoname
+		dataType: string
+		lineageTag: 4082ab8c-860c-49a1-92a5-0a922ed30f11
+		summarizeBy: none
+		sourceColumn: sachkontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'sachkontonummer- und Name'
+		dataType: string
+		lineageTag: 2f979fe8-0f8b-4687-8270-74ff9c6e33e0
+		summarizeBy: none
+		sourceColumn: sachkontonummer- und Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition buchungen_basis_DIm = m
+		mode: import
+		queryGroup: DimTable
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis_budget = Source{[Schema="dbo",Item="buchungen_basis_budget"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_buchungen_basis_budget,{"kontonummer", "kontobezeichnung"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Removed Other Columns", "kontonummer", "kontonummer - Copy"),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Duplicated Column", "kontobezeichnung", "kontobezeichnung - Copy"),
+				    #"Merged Columns" = Table.CombineColumns(Table.TransformColumnTypes(#"Duplicated Column1", {{"kontonummer - Copy", type text}}, "en-IN"),{"kontonummer - Copy", "kontobezeichnung - Copy"},Combiner.CombineTextByDelimiter(" ", QuoteStyle.None),"sachkontonummer- und Name"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Merged Columns",{{"kontonummer", "sachkonto"}, {"kontobezeichnung", "sachkontoname"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"sachkonto", Int64.Type}, {"sachkontoname", type text}, {"sachkontonummer- und Name", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

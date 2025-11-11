@@ -1,0 +1,85 @@
+table buchungen_budget
+	lineageTag: e82db5a3-b2d7-43e6-9570-94c31d673244
+
+	column Ist/Budget
+		dataType: string
+		lineageTag: 4189bb01-d37c-4ae5-ac7d-52546323a5cf
+		summarizeBy: none
+		sourceColumn: Ist/Budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 67162dea-f346-49c5-8a9e-667c07e28a2b
+		summarizeBy: none
+		sourceColumn: sachkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 749b280b-d2f4-47f5-99ec-3c1f4c0787bc
+		summarizeBy: none
+		sourceColumn: buchungsdatum
+
+		variation Variation
+			isDefault
+			relationship: a438f0b9-6fc8-496f-b2b1-8d55458834e7
+			defaultHierarchy: LocalDateTable_223fc5d4-21bb-4a8b-9ad2-37e9a1830429.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column soll
+		dataType: double
+		lineageTag: c0d10608-8b0f-40c3-8ce9-7807c52f0609
+		summarizeBy: sum
+		sourceColumn: soll
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column haben
+		dataType: int64
+		formatString: 0
+		lineageTag: acfe6a03-0fb9-4b3e-824b-f130c293ccf1
+		summarizeBy: sum
+		sourceColumn: haben
+
+		annotation SummarizationSetBy = Automatic
+
+	column betrag
+		dataType: double
+		lineageTag: c49bd5b9-ebde-481b-925a-bdc880b6c3a6
+		summarizeBy: sum
+		sourceColumn: betrag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition buchungen_budget = m
+		mode: import
+		queryGroup: Fact_Table
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis_budget = Source{[Schema="dbo",Item="buchungen_basis_budget"]}[Data],
+				    #"Changed Type2" = Table.TransformColumnTypes(dbo_buchungen_basis_budget,{{"finanzplanung", type text}, {"kontonummer", Int64.Type}, {"kontobezeichnung", type text}, {"dimension", type text}, {"dimensionskontonummer", type text}, {"dimensionskontoname", type text}, {"von", type date}, {"bis", type date}, {"soll", type number}, {"haben", Int64.Type}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type2",{"kontonummer", "von", "soll", "haben"}),
+				    #"Added Custom" = Table.AddColumn(#"Removed Other Columns", "betrag", each [soll]-[haben]),
+				    #"Added Custom1" = Table.AddColumn(#"Added Custom", "Ist/Budget", each "Budget"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Added Custom1",{{"kontonummer", "sachkonto"}, {"von", "buchungsdatum"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"sachkonto", Int64.Type}, {"buchungsdatum", type date}, {"soll", type number}, {"haben", Int64.Type}, {"betrag", type number}, {"Ist/Budget", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

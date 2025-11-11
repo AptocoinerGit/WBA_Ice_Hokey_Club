@@ -1,0 +1,80 @@
+table DimDate
+	lineageTag: 63f7bf93-a91f-4c9a-ade8-7b248d54a386
+
+	column Date
+		formatString: General Date
+		lineageTag: 5d8df4df-3d57-41e5-9b55-acbcdad5c7bc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: f53f003a-7cc4-426e-8305-7a00aa6fe1fa
+			defaultHierarchy: LocalDateTable_ac6addd1-3aae-4c33-bf0c-488c1694ab88.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 1657546b-a8e7-4682-afb7-2cc5686948c0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: 6bd03c27-b070-463d-ae3b-5a6c3ae34cc0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		lineageTag: 0f794d56-2119-47b9-8f18-a94b20d3f8f7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: 1beb88e9-be1d-4f41-b370-79240b475dcc
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day Name'
+		lineageTag: a9cabe2f-bafb-464d-957b-281045fe367e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR (
+				        MIN ( Buchungen[Buchungsdatum] ),
+				        MAX ( Buchungen[Buchungsdatum] )
+				    ),
+				    "Year", YEAR ( [Date] ),
+				    "Month Number", MONTH ( [Date] ),
+				    "Month Name", FORMAT ( [Date], "MMMM" ),
+				    "Day", DAY ( [Date] ),
+				    "Day Name", FORMAT ( [Date], "dddd" )
+				)
+				
+				```
+
+	annotation PBI_Id = da99e624b30f4c1aa057cfe6abc0f27d
+

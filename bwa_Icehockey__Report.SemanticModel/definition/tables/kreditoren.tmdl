@@ -1,0 +1,213 @@
+table kreditoren
+	lineageTag: 4c8df433-ccc7-4fda-af86-a77c18de8b27
+
+	column kontakt_master_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 62500801-eeac-4e80-b1a8-0e2527a08300
+		summarizeBy: sum
+		sourceColumn: kontakt_master_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontoname
+		dataType: string
+		lineageTag: 1db138e5-8169-42ab-a80c-38ec0a87de15
+		summarizeBy: none
+		sourceColumn: kontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontonummer
+		dataType: int64
+		formatString: 0
+		lineageTag: 15234ab2-a626-4635-ac6e-3149d9227486
+		summarizeBy: sum
+		sourceColumn: kontonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundennummer_extern
+		dataType: string
+		lineageTag: b1448d37-87bb-4c97-9247-3caf341ac346
+		summarizeBy: none
+		sourceColumn: kundennummer_extern
+
+		annotation SummarizationSetBy = Automatic
+
+	column umsatzsteuer_id
+		dataType: string
+		lineageTag: e010db79-d8d1-4f8f-aea8-7eb81cd3f87f
+		summarizeBy: none
+		sourceColumn: umsatzsteuer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nummernkreis
+		dataType: string
+		lineageTag: 3b8fda89-b076-4b53-a224-a32fee6a5bf8
+		summarizeBy: none
+		sourceColumn: nummernkreis
+
+		annotation SummarizationSetBy = Automatic
+
+	column sammelkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 5962d9e1-3c8c-4190-a921-df3aad8df3b8
+		summarizeBy: sum
+		sourceColumn: sammelkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column einzelüberweisung
+		dataType: string
+		lineageTag: 1eb2ff6b-ec5e-490f-a300-ba8fe037ab53
+		summarizeBy: none
+		sourceColumn: einzelüberweisung
+
+		annotation SummarizationSetBy = Automatic
+
+	column conto_pro_diverse
+		dataType: string
+		lineageTag: 63b6ee05-6432-48f3-88b1-96e1aa407976
+		summarizeBy: none
+		sourceColumn: conto_pro_diverse
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesperrt
+		dataType: string
+		lineageTag: e0be66b7-21c5-4b9b-9752-ad4d1b34caa6
+		summarizeBy: none
+		sourceColumn: gesperrt
+
+		annotation SummarizationSetBy = Automatic
+
+	column für_zahlung_gesperrt
+		dataType: string
+		lineageTag: 9ca962a6-ab98-4e7a-9c8d-32bf1673cbcc
+		summarizeBy: none
+		sourceColumn: für_zahlung_gesperrt
+
+		annotation SummarizationSetBy = Automatic
+
+	column erstellt_von
+		dataType: string
+		lineageTag: 2c1e6623-f71e-44a6-b9dc-036d83bb8ec6
+		summarizeBy: none
+		sourceColumn: erstellt_von
+
+		annotation SummarizationSetBy = Automatic
+
+	column erstellt_am
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 01e1c6b1-1684-4765-9513-6513d7893421
+		summarizeBy: none
+		sourceColumn: erstellt_am
+
+		variation Variation
+			isDefault
+			relationship: 22ae28c5-5641-441c-a1c4-93b66e40a54e
+			defaultHierarchy: LocalDateTable_60300a5e-33d8-484e-beb1-bd966cb2984e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column geändert_von
+		dataType: string
+		lineageTag: fa80d86f-8e2f-483e-8e0e-91b391c313f7
+		summarizeBy: none
+		sourceColumn: geändert_von
+
+		annotation SummarizationSetBy = Automatic
+
+	column geändert_am
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 74c7ed92-a9c8-46a9-959a-6d74ed629535
+		summarizeBy: none
+		sourceColumn: geändert_am
+
+		variation Variation
+			isDefault
+			relationship: 8bd21764-5b81-4851-9fef-94c8f05323ac
+			defaultHierarchy: LocalDateTable_7e7eef29-c7ab-4aad-a186-cb67b8e84e2e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column zahlungsbedingung_bezeichnung
+		dataType: string
+		lineageTag: f4300fec-1e7e-451f-a27a-0b5083cce5e1
+		summarizeBy: none
+		sourceColumn: zahlungsbedingung_bezeichnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsbedingung_skontofrist_1
+		dataType: string
+		lineageTag: fc792007-e303-4c58-9362-90248d6cce3f
+		summarizeBy: none
+		sourceColumn: zahlungsbedingung_skontofrist_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsbedingung_skontosatz_1
+		dataType: string
+		lineageTag: 1b480ccd-b706-4530-9e81-47091048b779
+		summarizeBy: none
+		sourceColumn: zahlungsbedingung_skontosatz_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsbedingung_skontofrist_2
+		dataType: string
+		lineageTag: 8e89d08e-0b57-41dd-b6b3-5c028528a0a4
+		summarizeBy: none
+		sourceColumn: zahlungsbedingung_skontofrist_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsbedingung_skontosatz_2
+		dataType: string
+		lineageTag: fb3356bd-ac43-4409-8676-3026253ec36d
+		summarizeBy: none
+		sourceColumn: zahlungsbedingung_skontosatz_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsbedingung_fälligkeitsfrist
+		dataType: int64
+		formatString: 0
+		lineageTag: 2026871e-d090-4391-b793-55302c81ea36
+		summarizeBy: sum
+		sourceColumn: zahlungsbedingung_fälligkeitsfrist
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsart
+		dataType: string
+		lineageTag: ec2d9695-037d-4c74-bce4-f28ad2aa255a
+		summarizeBy: none
+		sourceColumn: zahlungsart
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kreditoren = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_kreditoren = Source{[Schema="dbo",Item="kreditoren"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_kreditoren,{{"kontakt_master_id", Int64.Type}, {"kontoname", type text}, {"kontonummer", Int64.Type}, {"kundennummer_extern", type text}, {"umsatzsteuer_id", type text}, {"nummernkreis", type text}, {"sammelkonto", Int64.Type}, {"einzelüberweisung", type text}, {"conto_pro_diverse", type text}, {"gesperrt", type text}, {"für_zahlung_gesperrt", type text}, {"erstellt_von", type text}, {"erstellt_am", type date}, {"geändert_von", type text}, {"geändert_am", type date}, {"zahlungsbedingung_bezeichnung", type text}, {"zahlungsbedingung_skontofrist_1", type text}, {"zahlungsbedingung_skontosatz_1", type text}, {"zahlungsbedingung_skontofrist_2", type text}, {"zahlungsbedingung_skontosatz_2", type text}, {"zahlungsbedingung_fälligkeitsfrist", Int64.Type}, {"zahlungsart", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

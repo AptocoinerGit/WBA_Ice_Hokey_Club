@@ -1,0 +1,43 @@
+table MetricSelector
+	lineageTag: 4dfca173-423d-44ad-b3b4-0ac0fb46855b
+
+	column Metric
+		lineageTag: dce21040-88c3-4f86-8506-ce288f589b02
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Metric]
+		sortByColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column Index
+		formatString: 0
+		lineageTag: cb3e645f-cb1f-4b3e-9458-2197f80aad79
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Index]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MetricSelector = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Metric", STRING,
+				    "Index",INTEGER,
+				    {
+				        {"Ist",1},
+				        {"Budget",2},
+				        {"Vorjahr",3},
+				        {"Delta Budget",4},
+				        {"Delta PY",5},
+				        {"Delta % BG",6},
+				        {"Delta % PY",7}
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 5adaa1f7d9904a76a5b7731f9c1c906e
+

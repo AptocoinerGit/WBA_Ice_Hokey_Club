@@ -1,0 +1,103 @@
+relationship f53f003a-7cc4-426e-8305-7a00aa6fe1fa
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_ac6addd1-3aae-4c33-bf0c-488c1694ab88.Date
+
+relationship a438f0b9-6fc8-496f-b2b1-8d55458834e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: buchungen_budget.buchungsdatum
+	toColumn: LocalDateTable_223fc5d4-21bb-4a8b-9ad2-37e9a1830429.Date
+
+relationship 22ae28c5-5641-441c-a1c4-93b66e40a54e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren.erstellt_am
+	toColumn: LocalDateTable_60300a5e-33d8-484e-beb1-bd966cb2984e.Date
+
+relationship 8bd21764-5b81-4851-9fef-94c8f05323ac
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren.geändert_am
+	toColumn: LocalDateTable_7e7eef29-c7ab-4aad-a186-cb67b8e84e2e.Date
+
+relationship df432a38-8851-42dd-bb55-8c170c4e1249
+	joinOnDateBehavior: datePartOnly
+	fromColumn: op_liste.buchungsdatum
+	toColumn: LocalDateTable_33dd39ba-5952-440f-bfbd-2ce1695cd588.Date
+
+relationship 09b4fe7c-1cdd-4e9d-9e6e-5931eecaa252
+	joinOnDateBehavior: datePartOnly
+	fromColumn: op_liste.belegdatum
+	toColumn: LocalDateTable_b71d316b-791c-4fef-baf0-8ac27695df9b.Date
+
+relationship 57cca01a-eb98-422c-9bd2-f0d0d2b7c48f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: op_liste.erstellt_am
+	toColumn: LocalDateTable_72739641-0fc7-4122-a0c7-d154750758c2.Date
+
+relationship bfc5e82d-d9b2-4c9c-8b3a-555a20d56d43
+	joinOnDateBehavior: datePartOnly
+	fromColumn: op_liste.fälligkeitsdatum
+	toColumn: LocalDateTable_0f275fa5-a743-4b40-a1d5-3dd164a2551c.Date
+
+relationship dafab173-fe01-41ac-863f-d262bb80b8a5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren_gesamtumsatz.buchungsdatum
+	toColumn: LocalDateTable_fcf47397-a376-4234-8fa7-3664cd12a0ee.Date
+
+relationship c55abe88-0b04-40cf-8a2c-5acde86e1ad0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren_gesamtumsatz.belegdatum
+	toColumn: LocalDateTable_9f20e394-4089-4567-86ef-e5bfdaab298e.Date
+
+relationship 8e04bd09-cdd9-489c-8a06-859c572b33b0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren_gesamtumsatz.erstellt_am
+	toColumn: LocalDateTable_eb6e3d34-6d53-4bcd-951a-ea517f8ea2bc.Date
+
+relationship 86d3e140-d6b1-4176-a6b9-1117699c2d05
+	joinOnDateBehavior: datePartOnly
+	fromColumn: kreditoren_gesamtumsatz.fälligkeitsdatum
+	toColumn: LocalDateTable_976c6bfe-5111-4cce-915b-ae93284cbb52.Date
+
+relationship 8c0338c7-495d-4ae1-aea5-6dce4d9c5604
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'buchungen_basis (2)'.erstellungsdatum
+	toColumn: LocalDateTable_957267eb-ec7c-4df3-8df5-5eb6db6fdc6a.Date
+
+relationship 323faa32-0d8b-4ea4-9044-ed2eba724571
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'buchungen_basis_budget (2)'.von
+	toColumn: LocalDateTable_05b92b64-98b7-4b95-8c77-2b7506e3b123.Date
+
+relationship aaf8e433-341f-41c4-a5b2-5639bf4fb475
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'buchungen_basis_budget (2)'.bis
+	toColumn: LocalDateTable_d5b02c9f-7095-4384-86c4-2d12e45f4de1.Date
+
+relationship AutoDetected_6daa1487-147f-4369-8a11-e2c1ccafbb41
+	fromColumn: buchungen_budget.sachkonto
+	toColumn: scrbwa_gliederung.sachkonto
+
+relationship AutoDetected_d4018058-7cb4-4b6a-80a0-b3e456c103ad
+	fromColumn: buchungen_basis_DIm.sachkonto
+	toColumn: scrbwa_gliederung.sachkonto
+
+relationship AutoDetected_88054ac0-e585-458a-900c-8a4055f061f9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: kreditoren_gesamtumsatz.belegnummer
+	toColumn: op_liste.belegnummer
+
+relationship efd2d810-7220-97eb-0841-2492af0bda5e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: scrbwa_gliederung.sachkonto
+	toColumn: DIM_Sachkonten.sachkonto
+
+relationship f08d6099-e9b1-4e9a-80c4-7b48806e6b81
+	fromColumn: Buchungen.sachkonto
+	toColumn: DIM_Sachkonten.sachkonto
+
+relationship d7a16ddb-06c2-7691-9f89-d2d16cebd7b3
+	fromColumn: Buchungen.buchungsdatum
+	toColumn: DimDate.Date
+

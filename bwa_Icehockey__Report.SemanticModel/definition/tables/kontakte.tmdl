@@ -1,0 +1,5081 @@
+table kontakte
+	lineageTag: 947fb3d2-efad-4e36-ae92-ff37d11f32e8
+
+	column master_id
+		dataType: string
+		lineageTag: bb2dffd4-dd2d-419c-89f1-02b6ea990cb4
+		summarizeBy: none
+		sourceColumn: master_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ist_firmenkontakt
+		dataType: string
+		lineageTag: c2ce9f0a-c890-411a-bf5e-084d716ec5cc
+		summarizeBy: none
+		sourceColumn: ist_firmenkontakt
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname
+		dataType: string
+		lineageTag: 8b64fbc3-e668-41c2-9237-73b66f965713
+		summarizeBy: none
+		sourceColumn: vorname
+
+		annotation SummarizationSetBy = Automatic
+
+	column namegesellschaft
+		dataType: string
+		lineageTag: 3177dd3e-8e46-4c0f-84f9-8468c2d76a8b
+		summarizeBy: none
+		sourceColumn: namegesellschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesellschaft
+		dataType: string
+		lineageTag: 44710553-87ff-4b64-9349-9fd120da1f74
+		summarizeBy: none
+		sourceColumn: gesellschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column aus_benutzerkontakt
+		dataType: string
+		lineageTag: f3fcc21e-bfdc-40e3-b798-2b8742a13aa8
+		summarizeBy: none
+		sourceColumn: aus_benutzerkontakt
+
+		annotation SummarizationSetBy = Automatic
+
+	column sphereimplementation
+		dataType: string
+		lineageTag: 649a06a9-1aff-4615-b8a1-7d85f6c979b1
+		summarizeBy: none
+		sourceColumn: sphereimplementation
+
+		annotation SummarizationSetBy = Automatic
+
+	column spherebilling
+		dataType: string
+		lineageTag: 358e5230-d0cb-48dd-9b28-0516fa736f9d
+		summarizeBy: none
+		sourceColumn: spherebilling
+
+		annotation SummarizationSetBy = Automatic
+
+	column sphereresources
+		dataType: string
+		lineageTag: 0e2c615e-3876-4074-b055-cf651f2973ed
+		summarizeBy: none
+		sourceColumn: sphereresources
+
+		annotation SummarizationSetBy = Automatic
+
+	column sphereplanning
+		dataType: string
+		lineageTag: 0c5453fb-1215-4d76-9803-db82f474af41
+		summarizeBy: none
+		sourceColumn: sphereplanning
+
+		annotation SummarizationSetBy = Automatic
+
+	column spheredisposition
+		dataType: string
+		lineageTag: 56449649-97ae-4a23-b48d-05db9b799c2f
+		summarizeBy: none
+		sourceColumn: spheredisposition
+
+		annotation SummarizationSetBy = Automatic
+
+	column sphereinput
+		dataType: string
+		lineageTag: ba836fd2-04e7-4174-b927-91c8f5605cfc
+		summarizeBy: none
+		sourceColumn: sphereinput
+
+		annotation SummarizationSetBy = Automatic
+
+	column interessent
+		dataType: string
+		lineageTag: a4282f19-9c22-41e6-8f79-0475f78d6923
+		summarizeBy: none
+		sourceColumn: interessent
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead
+		dataType: string
+		lineageTag: e7eac72b-3dd9-436d-9311-a85376e89124
+		summarizeBy: none
+		sourceColumn: lead
+
+		annotation SummarizationSetBy = Automatic
+
+	column kunde
+		dataType: string
+		lineageTag: f4cdd663-4b9c-489c-8e34-bf05bf101790
+		summarizeBy: none
+		sourceColumn: kunde
+
+		annotation SummarizationSetBy = Automatic
+
+	column partner
+		dataType: string
+		lineageTag: d9b66699-3670-4784-a5f8-bab26197acf4
+		summarizeBy: none
+		sourceColumn: partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitnehmer
+		dataType: string
+		lineageTag: 7ef4f099-d735-4b47-9831-14dc6392cc46
+		summarizeBy: none
+		sourceColumn: arbeitnehmer
+
+		annotation SummarizationSetBy = Automatic
+
+	column anrede
+		dataType: string
+		lineageTag: 9080cbf8-6981-4a2b-b2d6-9e49d9825da6
+		summarizeBy: none
+		sourceColumn: anrede
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_1
+		dataType: string
+		lineageTag: 1c25032a-463d-4347-9207-fe9ea58ed671
+		summarizeBy: none
+		sourceColumn: telefon_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_2
+		dataType: string
+		lineageTag: 4ba45a67-cc91-4d9a-9e5a-5436ec11e434
+		summarizeBy: none
+		sourceColumn: telefon_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_3
+		dataType: string
+		lineageTag: 65c05df9-fedd-4641-ba2d-adb192c5e86e
+		summarizeBy: none
+		sourceColumn: telefon_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_4
+		dataType: string
+		lineageTag: b6702bba-e7c5-432a-906e-d90356fc427c
+		summarizeBy: none
+		sourceColumn: telefon_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_5
+		dataType: string
+		lineageTag: 5f4652f3-76ef-40f7-95af-27311c537424
+		summarizeBy: none
+		sourceColumn: telefon_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon_6
+		dataType: string
+		lineageTag: d887d396-4181-4681-a166-ab6f03c63449
+		summarizeBy: none
+		sourceColumn: telefon_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_1
+		dataType: string
+		lineageTag: a536abb6-f1a0-4edc-b620-be7c46a64d83
+		summarizeBy: none
+		sourceColumn: mobiltelefon_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_2
+		dataType: string
+		lineageTag: 3dd8973c-ea5a-4b66-80c3-6de299562ca1
+		summarizeBy: none
+		sourceColumn: mobiltelefon_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_3
+		dataType: string
+		lineageTag: 188e8a89-71a8-46d0-b5e4-a99bcf11a0b3
+		summarizeBy: none
+		sourceColumn: mobiltelefon_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_4
+		dataType: string
+		lineageTag: 8f4982f1-646d-4ba3-8d01-4370e962cc44
+		summarizeBy: none
+		sourceColumn: mobiltelefon_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_5
+		dataType: string
+		lineageTag: 2269daa5-e981-4fcf-8f58-35ffc3ce0216
+		summarizeBy: none
+		sourceColumn: mobiltelefon_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column mobiltelefon_6
+		dataType: string
+		lineageTag: 3f12067d-563c-4ec1-81a3-bdbcd2f170f6
+		summarizeBy: none
+		sourceColumn: mobiltelefon_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column email13
+		dataType: string
+		lineageTag: 4c98d4e5-f9de-4055-b569-f1c91b5b616c
+		summarizeBy: none
+		sourceColumn: email13
+
+		annotation SummarizationSetBy = Automatic
+
+	column emailcc13
+		dataType: string
+		lineageTag: a7a1f125-c1e2-483c-a356-64aa49c0687f
+		summarizeBy: none
+		sourceColumn: emailcc13
+
+		annotation SummarizationSetBy = Automatic
+
+	column emailbcc13
+		dataType: string
+		lineageTag: 6b05da31-be59-4d8c-8697-d50418049b59
+		summarizeBy: none
+		sourceColumn: emailbcc13
+
+		annotation SummarizationSetBy = Automatic
+
+	column webseite
+		dataType: string
+		lineageTag: e7df73b9-034d-424c-9001-6bdf76b77f6d
+		summarizeBy: none
+		sourceColumn: webseite
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_1
+		dataType: string
+		lineageTag: d9335133-0aba-42fd-912e-51ee813eaae7
+		summarizeBy: none
+		sourceColumn: fax_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_2
+		dataType: string
+		lineageTag: f2c04a30-65ff-4efc-b1c9-90d757748468
+		summarizeBy: none
+		sourceColumn: fax_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_3
+		dataType: string
+		lineageTag: 55ec44c0-4ce1-475f-8c5e-3a5d56071271
+		summarizeBy: none
+		sourceColumn: fax_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_4
+		dataType: string
+		lineageTag: 69c57771-b57d-46a5-b21d-5b03acccefd5
+		summarizeBy: none
+		sourceColumn: fax_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_5
+		dataType: string
+		lineageTag: e157331e-b60c-44b8-b4f7-f97549c31cf3
+		summarizeBy: none
+		sourceColumn: fax_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column fax_6
+		dataType: string
+		lineageTag: 389e11a6-c62e-4815-b458-8ce06a66e1ec
+		summarizeBy: none
+		sourceColumn: fax_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundennummer
+		dataType: string
+		lineageTag: a5bd5635-74ae-4b20-8cf9-0fd8e560b6d7
+		summarizeBy: none
+		sourceColumn: kundennummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column steuernummer
+		dataType: string
+		lineageTag: ab741490-179b-40de-858f-73764adbb849
+		summarizeBy: none
+		sourceColumn: steuernummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column skipedlohnprocessing
+		dataType: string
+		lineageTag: a90229ee-3496-48eb-b32c-7f5ae92a05bd
+		summarizeBy: none
+		sourceColumn: skipedlohnprocessing
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter
+		dataType: string
+		lineageTag: 8087788c-6e24-4abe-b6b6-f7f2bbebcd6e
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_2
+		dataType: string
+		lineageTag: 21cc7417-c810-4849-834f-2fb5ad7b0b74
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_3
+		dataType: string
+		lineageTag: 801743df-b85b-4ced-a472-d07237d07748
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_4
+		dataType: string
+		lineageTag: 887e9894-43e8-4aec-9c75-13ad77f67adf
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_5
+		dataType: string
+		lineageTag: 810d5920-e499-474b-bb6a-ca09319addef
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_6
+		dataType: string
+		lineageTag: 71c23483-1950-4b75-bd1a-5bc63ef2c59f
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_7
+		dataType: string
+		lineageTag: e41996f0-a342-4aa3-b475-1b8369cf7242
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesetzlicher_vertreter_8
+		dataType: string
+		lineageTag: caed88e6-355a-4e7a-8690-ae813c518c6c
+		summarizeBy: none
+		sourceColumn: gesetzlicher_vertreter_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_1
+		dataType: string
+		lineageTag: fdca2520-88ef-417e-a10c-0a1760c61d65
+		summarizeBy: none
+		sourceColumn: ansprechpartner_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_2
+		dataType: string
+		lineageTag: aac532a7-1d55-4fd7-8e53-3b96e4d0e07c
+		summarizeBy: none
+		sourceColumn: ansprechpartner_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_3
+		dataType: string
+		lineageTag: 679926ff-ee86-46e1-b5cd-9710fc0c1c14
+		summarizeBy: none
+		sourceColumn: ansprechpartner_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_4
+		dataType: string
+		lineageTag: aa8a75f1-9d8f-4299-8eba-e67a14d4b067
+		summarizeBy: none
+		sourceColumn: ansprechpartner_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_5
+		dataType: string
+		lineageTag: 5f4b0ad8-6cc1-4f2b-86c8-36b1af792095
+		summarizeBy: none
+		sourceColumn: ansprechpartner_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_6
+		dataType: string
+		lineageTag: c97d59e9-61b0-471d-91c0-ff9e65488370
+		summarizeBy: none
+		sourceColumn: ansprechpartner_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_7
+		dataType: string
+		lineageTag: 78fb11d3-ca35-4bfe-8fc0-e1276a09b3ea
+		summarizeBy: none
+		sourceColumn: ansprechpartner_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_8
+		dataType: string
+		lineageTag: 5c0721ca-80b6-4dc6-9e85-36d1493fbae0
+		summarizeBy: none
+		sourceColumn: ansprechpartner_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_9
+		dataType: string
+		lineageTag: a0ec554e-6853-40d4-91e0-b7a234ce8a4b
+		summarizeBy: none
+		sourceColumn: ansprechpartner_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_10
+		dataType: string
+		lineageTag: 5105259c-4df0-4024-830f-f1f946ae849b
+		summarizeBy: none
+		sourceColumn: ansprechpartner_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_11
+		dataType: string
+		lineageTag: 46a907a3-c335-48db-b5c3-53f36612496a
+		summarizeBy: none
+		sourceColumn: ansprechpartner_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_12
+		dataType: string
+		lineageTag: c707a0e9-15e4-4ff7-ac00-fbf6f5dccf18
+		summarizeBy: none
+		sourceColumn: ansprechpartner_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_13
+		dataType: string
+		lineageTag: 5e8a1e8e-0e24-4d9e-88a3-59b84abc2088
+		summarizeBy: none
+		sourceColumn: ansprechpartner_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_14
+		dataType: string
+		lineageTag: 782fb0bd-2f4f-4e75-a544-f83abd275e01
+		summarizeBy: none
+		sourceColumn: ansprechpartner_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column titel
+		dataType: string
+		lineageTag: fe43d307-bd52-48ce-b3e1-5eb451b26918
+		summarizeBy: none
+		sourceColumn: titel
+
+		annotation SummarizationSetBy = Automatic
+
+	column klassifikation
+		dataType: string
+		lineageTag: 84533122-4f22-45c3-847c-ba91a59af9a6
+		summarizeBy: none
+		sourceColumn: klassifikation
+
+		annotation SummarizationSetBy = Automatic
+
+	column quelle
+		dataType: string
+		lineageTag: 6341df70-1cf0-4cb9-96b7-ee91342a0b35
+		summarizeBy: none
+		sourceColumn: quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: string
+		lineageTag: 2afe7b71-914d-4912-8f7a-029beef1bdef
+		summarizeBy: none
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	column stelle
+		dataType: string
+		lineageTag: ac86dc4e-bac4-498c-a840-22933c437d97
+		summarizeBy: none
+		sourceColumn: stelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column geburtsdatum
+		dataType: string
+		lineageTag: 872e8030-d877-4037-b123-ae684aa72faa
+		summarizeBy: none
+		sourceColumn: geburtsdatum
+
+		annotation SummarizationSetBy = Automatic
+
+	column abteilung
+		dataType: string
+		lineageTag: 875a9a2f-2b2a-4b55-a46b-ba5c47619203
+		summarizeBy: none
+		sourceColumn: abteilung
+
+		annotation SummarizationSetBy = Automatic
+
+	column notiz
+		dataType: string
+		lineageTag: 2f588f1c-a7f3-40b6-8a0e-33414ffdc515
+		summarizeBy: none
+		sourceColumn: notiz
+
+		annotation SummarizationSetBy = Automatic
+
+	column position1
+		dataType: string
+		lineageTag: 59dfb813-7ff8-42b5-8a05-09c91ee63c92
+		summarizeBy: none
+		sourceColumn: position1
+
+		annotation SummarizationSetBy = Automatic
+
+	column preisliste_verkauf_mid
+		dataType: string
+		lineageTag: f49877dc-16a9-4fba-8ed2-6e4e302b21dd
+		summarizeBy: none
+		sourceColumn: preisliste_verkauf_mid
+
+		annotation SummarizationSetBy = Automatic
+
+	column preisliste_verkauf
+		dataType: string
+		lineageTag: 63904ac6-cc32-4721-9d85-c73e75c03917
+		summarizeBy: none
+		sourceColumn: preisliste_verkauf
+
+		annotation SummarizationSetBy = Automatic
+
+	column _potenziale_offen
+		dataType: string
+		lineageTag: 8870c75d-ca11-4400-a11c-cc3dbf0d64e1
+		summarizeBy: none
+		sourceColumn: _potenziale_offen
+
+		annotation SummarizationSetBy = Automatic
+
+	column _angebote_offen
+		dataType: string
+		lineageTag: 2134cdd6-a642-4359-bc3a-4f40dfa734ce
+		summarizeBy: none
+		sourceColumn: _angebote_offen
+
+		annotation SummarizationSetBy = Automatic
+
+	column _rechnungen
+		dataType: string
+		lineageTag: 0503ac3d-50c6-4105-ba99-bf0e413c799d
+		summarizeBy: none
+		sourceColumn: _rechnungen
+
+		annotation SummarizationSetBy = Automatic
+
+	column _gestellter_rechnungen
+		dataType: string
+		lineageTag: 885812c0-9fc7-441c-ba67-241ddbcbca5b
+		summarizeBy: none
+		sourceColumn: _gestellter_rechnungen
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_1
+		dataType: string
+		lineageTag: c166e2a7-c28b-4c30-9b5c-db76c5e3ba29
+		summarizeBy: none
+		sourceColumn: nachname_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_1
+		dataType: string
+		lineageTag: b8a94d61-b61f-4941-8482-ae52fa75b064
+		summarizeBy: none
+		sourceColumn: vorname_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_1
+		dataType: string
+		lineageTag: 3b6b1d9b-4cfa-47b6-81aa-4dc37b385a9e
+		summarizeBy: none
+		sourceColumn: stadt_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_1
+		dataType: string
+		lineageTag: 30c42922-fde8-40e9-8e86-1c50b26f921d
+		summarizeBy: none
+		sourceColumn: postleitzahl_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_1
+		dataType: string
+		lineageTag: aa6365ad-f9df-4c31-802f-6fc6094a6995
+		summarizeBy: none
+		sourceColumn: bundesland_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_1
+		dataType: string
+		lineageTag: c39e8625-23c2-44f3-913e-b00c59e2a7d0
+		summarizeBy: none
+		sourceColumn: land_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_1
+		dataType: string
+		lineageTag: 48cdd8e6-7ec7-4be7-a7c3-5617bff51f12
+		summarizeBy: none
+		sourceColumn: zeitzone_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_1
+		dataType: string
+		lineageTag: ab9f43b9-cc6a-4e53-876a-e7e894b4a431
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_2
+		dataType: string
+		lineageTag: 5592d085-2a8d-496f-adae-ab4f1181ecf5
+		summarizeBy: none
+		sourceColumn: nachname_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_2
+		dataType: string
+		lineageTag: faa06b5f-3e6f-405c-aaec-f2628286b1ee
+		summarizeBy: none
+		sourceColumn: vorname_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_2
+		dataType: string
+		lineageTag: 38f6d463-5eb0-4ed1-92c6-829f70d485e3
+		summarizeBy: none
+		sourceColumn: stadt_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_2
+		dataType: string
+		lineageTag: 3f982592-4c9b-4b27-9cc7-a5215dddfbd5
+		summarizeBy: none
+		sourceColumn: postleitzahl_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_2
+		dataType: string
+		lineageTag: a3d0039d-8921-4222-a62f-ad27afa49ed1
+		summarizeBy: none
+		sourceColumn: bundesland_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_2
+		dataType: string
+		lineageTag: 37f56f37-33f5-4c8e-a0b7-f78160bf6b4c
+		summarizeBy: none
+		sourceColumn: land_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_2
+		dataType: string
+		lineageTag: 8655c78f-4f59-4cfc-8650-98cb6b57ee57
+		summarizeBy: none
+		sourceColumn: zeitzone_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_2
+		dataType: string
+		lineageTag: 691b811f-ec17-4e5b-bc28-8dd4de2fe5f3
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_3
+		dataType: string
+		lineageTag: 9e57da62-5037-4b90-ada4-2335acbd6c48
+		summarizeBy: none
+		sourceColumn: nachname_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_3
+		dataType: string
+		lineageTag: 5f48e06a-6deb-4dc2-8539-b01fe5e9d98d
+		summarizeBy: none
+		sourceColumn: vorname_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_3
+		dataType: string
+		lineageTag: 1445d288-54b6-4410-a98c-7d9c0b8a1f6b
+		summarizeBy: none
+		sourceColumn: stadt_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_3
+		dataType: string
+		lineageTag: 444dfd3d-ea4d-4b42-9744-ac2ac6203ef0
+		summarizeBy: none
+		sourceColumn: postleitzahl_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_3
+		dataType: string
+		lineageTag: 88dc329c-3e5b-475b-8cdd-3bad08279617
+		summarizeBy: none
+		sourceColumn: bundesland_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_3
+		dataType: string
+		lineageTag: 61993a6a-9aef-4166-a4ce-d071a9ddc693
+		summarizeBy: none
+		sourceColumn: land_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_3
+		dataType: string
+		lineageTag: 8743bd48-d060-4170-bdef-cf3ce921f3f4
+		summarizeBy: none
+		sourceColumn: zeitzone_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_3
+		dataType: string
+		lineageTag: d29f753d-b841-4795-b857-c807a37a1333
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_4
+		dataType: string
+		lineageTag: 1fe708fd-d088-4b87-8190-2b21774006a9
+		summarizeBy: none
+		sourceColumn: nachname_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_4
+		dataType: string
+		lineageTag: e329b43c-8aea-49ee-82b2-e5f6600f9a79
+		summarizeBy: none
+		sourceColumn: vorname_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_4
+		dataType: string
+		lineageTag: 0d5caa3a-357f-48d6-93e6-785a3d809856
+		summarizeBy: none
+		sourceColumn: stadt_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_4
+		dataType: string
+		lineageTag: d9d7fe81-cb46-4992-a76d-ba35e52a0db0
+		summarizeBy: none
+		sourceColumn: postleitzahl_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_4
+		dataType: string
+		lineageTag: eb95b0bb-ac9b-4cbe-bce9-ef730025d4aa
+		summarizeBy: none
+		sourceColumn: bundesland_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_4
+		dataType: string
+		lineageTag: d4debfb7-f080-4cdc-93cf-18c4b32f0077
+		summarizeBy: none
+		sourceColumn: land_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_4
+		dataType: string
+		lineageTag: 96a11982-2b89-43f0-9841-c2b7a2936caf
+		summarizeBy: none
+		sourceColumn: zeitzone_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_4
+		dataType: string
+		lineageTag: 22b343d5-079d-4491-9bfc-b731c44dc014
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_5
+		dataType: string
+		lineageTag: abd9d4fb-0a84-4c6d-81a7-f7314ab7839a
+		summarizeBy: none
+		sourceColumn: nachname_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_5
+		dataType: string
+		lineageTag: 603c9a76-6f58-49f6-a0dd-8a1b99b354ab
+		summarizeBy: none
+		sourceColumn: vorname_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_5
+		dataType: string
+		lineageTag: 54c8d386-2d86-4b88-b0b3-19cc3f5da5c1
+		summarizeBy: none
+		sourceColumn: stadt_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_5
+		dataType: string
+		lineageTag: cc7ca764-293f-49e8-8c80-375f395b85ab
+		summarizeBy: none
+		sourceColumn: postleitzahl_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_5
+		dataType: string
+		lineageTag: 49be5562-5fd2-4652-8699-6c7384d3fd3b
+		summarizeBy: none
+		sourceColumn: bundesland_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_5
+		dataType: string
+		lineageTag: e148016a-9c68-4093-bf93-c387975b719e
+		summarizeBy: none
+		sourceColumn: land_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_5
+		dataType: string
+		lineageTag: e70f0598-4df9-4e39-b416-1240e528697e
+		summarizeBy: none
+		sourceColumn: zeitzone_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_5
+		dataType: string
+		lineageTag: c8c5337c-01d2-49bb-8330-5c97cd5f7e7a
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachname_6
+		dataType: string
+		lineageTag: b52623dc-80e0-4562-824f-89846ab745d9
+		summarizeBy: none
+		sourceColumn: nachname_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorname_6
+		dataType: string
+		lineageTag: 1f42629a-0736-4cf1-aaa0-1a35acb8f4e3
+		summarizeBy: none
+		sourceColumn: vorname_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column stadt_6
+		dataType: string
+		lineageTag: 0eb7a21f-7281-4e67-8640-06e7ad57fd8e
+		summarizeBy: none
+		sourceColumn: stadt_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column postleitzahl_6
+		dataType: string
+		lineageTag: 905d5545-76f2-4917-8256-7cc5932f45cc
+		summarizeBy: none
+		sourceColumn: postleitzahl_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesland_6
+		dataType: string
+		lineageTag: 9d784b66-75f4-4046-adb5-49a05be0193f
+		summarizeBy: none
+		sourceColumn: bundesland_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_6
+		dataType: string
+		lineageTag: 68c0c85c-336e-4a94-a88a-355f89de2744
+		summarizeBy: none
+		sourceColumn: land_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeitzone_6
+		dataType: string
+		lineageTag: a523ad7a-c3f2-4af4-bd70-ef3275fc50dc
+		summarizeBy: none
+		sourceColumn: zeitzone_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column zustellanweisung_co_6
+		dataType: string
+		lineageTag: 93e8c816-efb6-42f5-8aba-f0dae8439cd1
+		summarizeBy: none
+		sourceColumn: zustellanweisung_co_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column aktiv
+		dataType: string
+		lineageTag: eb00c784-9ecc-435f-bc9e-cc907432691e
+		summarizeBy: none
+		sourceColumn: aktiv
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontaktinhaber
+		dataType: string
+		lineageTag: 6df93a9e-c292-4e4f-be30-7489d137b0c9
+		summarizeBy: none
+		sourceColumn: kontaktinhaber
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitgeber_id
+		dataType: string
+		lineageTag: e74e283e-78d4-4720-9bdc-5286060c59ff
+		summarizeBy: none
+		sourceColumn: arbeitgeber_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitgeber
+		dataType: string
+		lineageTag: b24cfe1e-6a18-41d1-8112-3ffcd9b9664f
+		summarizeBy: none
+		sourceColumn: arbeitgeber
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_veraltet
+		dataType: string
+		lineageTag: cbafcb4a-ec41-41e5-8370-7a53f06991c5
+		summarizeBy: none
+		sourceColumn: ansprechpartner_veraltet
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsart
+		dataType: string
+		lineageTag: 0b2fef61-224a-4666-a160-e91a4b02df5e
+		summarizeBy: none
+		sourceColumn: zahlungsart
+
+		annotation SummarizationSetBy = Automatic
+
+	column erstellungsdatum
+		dataType: string
+		lineageTag: e72fcf3b-10c5-4fc2-b293-833b56be2846
+		summarizeBy: none
+		sourceColumn: erstellungsdatum
+
+		annotation SummarizationSetBy = Automatic
+
+	column customerzoneid
+		dataType: string
+		lineageTag: 2c0f6348-951d-4be1-8d0b-1cc5404bb2ec
+		summarizeBy: none
+		sourceColumn: customerzoneid
+
+		annotation SummarizationSetBy = Automatic
+
+	column customerzonenumber
+		dataType: string
+		lineageTag: 8925b964-7b8d-4171-ab96-57fca1791095
+		summarizeBy: none
+		sourceColumn: customerzonenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendorzoneid
+		dataType: string
+		lineageTag: 3d648362-84e2-4180-9721-b84a796c6b37
+		summarizeBy: none
+		sourceColumn: vendorzoneid
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendorzonenumber
+		dataType: string
+		lineageTag: e38d1578-a66e-4eb5-8817-e749718d4171
+		summarizeBy: none
+		sourceColumn: vendorzonenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column branche
+		dataType: string
+		lineageTag: 58809636-7038-4862-90e2-a1fb945dc13c
+		summarizeBy: none
+		sourceColumn: branche
+
+		annotation SummarizationSetBy = Automatic
+
+	column mitarbeiteranzahl
+		dataType: string
+		lineageTag: 2085146e-50b6-498d-9744-97fcd43fe516
+		summarizeBy: none
+		sourceColumn: mitarbeiteranzahl
+
+		annotation SummarizationSetBy = Automatic
+
+	column umsatz
+		dataType: string
+		lineageTag: 7567a1f7-bcf8-476b-8291-bbff716e37ff
+		summarizeBy: none
+		sourceColumn: umsatz
+
+		annotation SummarizationSetBy = Automatic
+
+	column employeenumber
+		dataType: string
+		lineageTag: 0f7a5f58-da48-4858-b60f-11686e204b95
+		summarizeBy: none
+		sourceColumn: employeenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column invoicetype
+		dataType: string
+		lineageTag: 7c4c6e42-0e52-4491-9bd7-b076b02ed36e
+		summarizeBy: none
+		sourceColumn: invoicetype
+
+		annotation SummarizationSetBy = Automatic
+
+	column rechnungsformat
+		dataType: string
+		lineageTag: fff477f8-37e6-40c0-a850-b62b03eff661
+		summarizeBy: none
+		sourceColumn: rechnungsformat
+
+		annotation SummarizationSetBy = Automatic
+
+	column rechtsform_der_organisation
+		dataType: string
+		lineageTag: 99db8bf6-969a-4333-94a2-6e5f87492a7f
+		summarizeBy: none
+		sourceColumn: rechtsform_der_organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column art_der_organisation
+		dataType: string
+		lineageTag: f641613a-bef7-4bd0-bc58-817b27c2e512
+		summarizeBy: none
+		sourceColumn: art_der_organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column mitarbeiteranzahl_circa
+		dataType: string
+		lineageTag: 6f217dcb-4571-4a02-8379-9b28dc4a599d
+		summarizeBy: none
+		sourceColumn: mitarbeiteranzahl_circa
+
+		annotation SummarizationSetBy = Automatic
+
+	column jahresumsatz_euro_circa
+		dataType: string
+		lineageTag: 49974c7c-a97e-4789-ac38-17ab9a36a2ac
+		summarizeBy: none
+		sourceColumn: jahresumsatz_euro_circa
+
+		annotation SummarizationSetBy = Automatic
+
+	column marktanteil__circa
+		dataType: string
+		lineageTag: 80ddda2c-5888-4c2a-a4e1-eaf75f56899b
+		summarizeBy: none
+		sourceColumn: marktanteil__circa
+
+		annotation SummarizationSetBy = Automatic
+
+	column geschlecht
+		dataType: string
+		lineageTag: d91bceb9-3935-4b57-b97b-65ae4078a8c8
+		summarizeBy: none
+		sourceColumn: geschlecht
+
+		annotation SummarizationSetBy = Automatic
+
+	column geburtsname
+		dataType: string
+		lineageTag: b3fac400-a6c7-431c-94fa-a8d12b01fd2d
+		summarizeBy: none
+		sourceColumn: geburtsname
+
+		annotation SummarizationSetBy = Automatic
+
+	column familienstatus
+		dataType: string
+		lineageTag: 512b3182-c18d-4419-a971-1076a9ac411f
+		summarizeBy: none
+		sourceColumn: familienstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column anzahl_kinder
+		dataType: string
+		lineageTag: 85c2384a-a1c4-4149-81cf-fcf88f96bc8a
+		summarizeBy: none
+		sourceColumn: anzahl_kinder
+
+		annotation SummarizationSetBy = Automatic
+
+	column beruf
+		dataType: string
+		lineageTag: 26383133-35fb-4acd-a8a2-0a86010b9c11
+		summarizeBy: none
+		sourceColumn: beruf
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitgeber1
+		dataType: string
+		lineageTag: ad1b85f9-e29e-459d-a91a-e3d0163071fd
+		summarizeBy: none
+		sourceColumn: arbeitgeber1
+
+		annotation SummarizationSetBy = Automatic
+
+	column dienststelle
+		dataType: string
+		lineageTag: b1dd48f2-32aa-4f89-b66d-8537321d29c7
+		summarizeBy: none
+		sourceColumn: dienststelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_veraltet1
+		dataType: string
+		lineageTag: 5a403720-ce69-4d0f-abfb-5f5ab745ec28
+		summarizeBy: none
+		sourceColumn: ansprechpartner_veraltet1
+
+		annotation SummarizationSetBy = Automatic
+
+	column hauspostadresse
+		dataType: string
+		lineageTag: 160511ed-bdb2-467a-9af6-d9881ab0ea84
+		summarizeBy: none
+		sourceColumn: hauspostadresse
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundengruppe
+		dataType: string
+		lineageTag: d3995bdd-0333-4fcf-878b-5e9a84b3c25f
+		summarizeBy: none
+		sourceColumn: kundengruppe
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundenkurzstatus
+		dataType: string
+		lineageTag: e5f8293f-cdd4-4525-b5ff-d48296c65642
+		summarizeBy: none
+		sourceColumn: kundenkurzstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column sprache
+		dataType: string
+		lineageTag: e2c03860-31ab-4dd5-a163-f4b3251b64fe
+		summarizeBy: none
+		sourceColumn: sprache
+
+		annotation SummarizationSetBy = Automatic
+
+	column imei
+		dataType: string
+		lineageTag: 813195b5-b9f6-497f-a46b-219919803a0b
+		summarizeBy: none
+		sourceColumn: imei
+
+		annotation SummarizationSetBy = Automatic
+
+	column bevorzugte_kontaktart
+		dataType: string
+		lineageTag: 165ee9ff-3c44-4dba-b197-c98c4d5ae7b1
+		summarizeBy: none
+		sourceColumn: bevorzugte_kontaktart
+
+		annotation SummarizationSetBy = Automatic
+
+	column im_adresse
+		dataType: string
+		lineageTag: 968a8d9a-e719-4fc3-b1ee-a9fc5343c889
+		summarizeBy: none
+		sourceColumn: im_adresse
+
+		annotation SummarizationSetBy = Automatic
+
+	column skype_id
+		dataType: string
+		lineageTag: 068ddf3b-4d29-402b-a767-60b8e96297b8
+		summarizeBy: none
+		sourceColumn: skype_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column xing_link
+		dataType: string
+		lineageTag: 3ba4de46-3bd1-4521-aa04-0c4b94091751
+		summarizeBy: none
+		sourceColumn: xing_link
+
+		annotation SummarizationSetBy = Automatic
+
+	column linkedin_link
+		dataType: string
+		lineageTag: 55410f28-f83d-48a8-9110-c0a7f3e78470
+		summarizeBy: none
+		sourceColumn: linkedin_link
+
+		annotation SummarizationSetBy = Automatic
+
+	column link_map
+		dataType: string
+		lineageTag: 868681e4-3361-4407-bb1d-1d6e29c0809f
+		summarizeBy: none
+		sourceColumn: link_map
+
+		annotation SummarizationSetBy = Automatic
+
+	column bundesanzeiger
+		dataType: string
+		lineageTag: c0212674-37c5-4afc-8b97-8bd056771eac
+		summarizeBy: none
+		sourceColumn: bundesanzeiger
+
+		annotation SummarizationSetBy = Automatic
+
+	column handelsregister
+		dataType: string
+		lineageTag: 07053ffa-de0b-464e-9f7a-088c1cae4e8f
+		summarizeBy: none
+		sourceColumn: handelsregister
+
+		annotation SummarizationSetBy = Automatic
+
+	column handelsregisternummer
+		dataType: string
+		lineageTag: e0fd6f95-8882-43ac-97ed-1d2aaa2b8c7c
+		summarizeBy: none
+		sourceColumn: handelsregisternummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column unternehmensgegenstand
+		dataType: string
+		lineageTag: 73e32003-deaa-49b6-94a6-d2d51c5ebfd4
+		summarizeBy: none
+		sourceColumn: unternehmensgegenstand
+
+		annotation SummarizationSetBy = Automatic
+
+	column betriebsnummer
+		dataType: string
+		lineageTag: f46ab109-3cbd-4b79-b766-eb7a14853253
+		summarizeBy: none
+		sourceColumn: betriebsnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column berufsgenossenschaft
+		dataType: string
+		lineageTag: 21edd7b0-b112-4126-be58-053fe341c66b
+		summarizeBy: none
+		sourceColumn: berufsgenossenschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column ebayid
+		dataType: string
+		lineageTag: 7e30e682-a9cc-4695-a2ab-2dca8af7154d
+		summarizeBy: none
+		sourceColumn: ebayid
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundenname_ebay
+		dataType: string
+		lineageTag: b4906d30-8eee-4b5c-a511-558d93ac8b48
+		summarizeBy: none
+		sourceColumn: kundenname_ebay
+
+		annotation SummarizationSetBy = Automatic
+
+	column finanzamt
+		dataType: string
+		lineageTag: f32db2bf-f855-44f6-bb52-508de12d261f
+		summarizeBy: none
+		sourceColumn: finanzamt
+
+		annotation SummarizationSetBy = Automatic
+
+	column steuernummer1
+		dataType: string
+		lineageTag: 96998688-5a17-4bc4-aa97-fbd19b421fef
+		summarizeBy: none
+		sourceColumn: steuernummer1
+
+		annotation SummarizationSetBy = Automatic
+
+	column vip
+		dataType: string
+		lineageTag: bc7c2cac-1b3b-45e1-b0b3-e1ee3a068510
+		summarizeBy: none
+		sourceColumn: vip
+
+		annotation SummarizationSetBy = Automatic
+
+	column kurzname
+		dataType: string
+		lineageTag: 11bfb0db-6c73-4461-a232-1518cb870e58
+		summarizeBy: none
+		sourceColumn: kurzname
+
+		annotation SummarizationSetBy = Automatic
+
+	column zielgruppe
+		dataType: string
+		lineageTag: c7da2223-7acd-4a24-ba0d-33e0d8b6ebcd
+		summarizeBy: none
+		sourceColumn: zielgruppe
+
+		annotation SummarizationSetBy = Automatic
+
+	column bildungsstand
+		dataType: string
+		lineageTag: f03fb782-a4fa-40aa-94e6-c449a1182a19
+		summarizeBy: none
+		sourceColumn: bildungsstand
+
+		annotation SummarizationSetBy = Automatic
+
+	column einkommensklasse
+		dataType: string
+		lineageTag: da39dcc8-8f15-4ca8-8bc4-06407634d9ec
+		summarizeBy: none
+		sourceColumn: einkommensklasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column einstellung
+		dataType: string
+		lineageTag: a10595dc-1c22-4068-b072-4fc0a4b2a9d8
+		summarizeBy: none
+		sourceColumn: einstellung
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitstyp
+		dataType: string
+		lineageTag: e05fd238-607c-48f9-af76-8ef7d351c46b
+		summarizeBy: none
+		sourceColumn: arbeitstyp
+
+		annotation SummarizationSetBy = Automatic
+
+	column kaufverhalten
+		dataType: string
+		lineageTag: b059d44e-d479-4eba-abc5-5e463757b32c
+		summarizeBy: none
+		sourceColumn: kaufverhalten
+
+		annotation SummarizationSetBy = Automatic
+
+	column lebensstil
+		dataType: string
+		lineageTag: 721ec78b-9858-40e0-9e54-73413be32250
+		summarizeBy: none
+		sourceColumn: lebensstil
+
+		annotation SummarizationSetBy = Automatic
+
+	column risikoeinstellung
+		dataType: string
+		lineageTag: caa6d534-e840-4174-a8b7-f8c3053e1c42
+		summarizeBy: none
+		sourceColumn: risikoeinstellung
+
+		annotation SummarizationSetBy = Automatic
+
+	column marketingbeauftragter
+		dataType: string
+		lineageTag: ef4dc623-9055-4cab-b2d1-2d1b212bc876
+		summarizeBy: none
+		sourceColumn: marketingbeauftragter
+
+		annotation SummarizationSetBy = Automatic
+
+	column marketingbeauftragter1
+		dataType: string
+		lineageTag: 196fad66-7053-450d-b8b2-1e5d451f8087
+		summarizeBy: none
+		sourceColumn: marketingbeauftragter1
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundenbetreuer_id
+		dataType: string
+		lineageTag: 90440dde-6594-43a4-be1c-4631a2d9ef89
+		summarizeBy: none
+		sourceColumn: kundenbetreuer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundenbetreuer
+		dataType: string
+		lineageTag: 9e13b6eb-2c64-4391-95c4-920ac9961916
+		summarizeBy: none
+		sourceColumn: kundenbetreuer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kampagnenbeauftragter_id
+		dataType: string
+		lineageTag: d757fd11-6b52-4ea3-9b38-246f4f597ab3
+		summarizeBy: none
+		sourceColumn: kampagnenbeauftragter_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column kampagnenbeauftragter
+		dataType: string
+		lineageTag: c39ee5f1-7cbd-4a08-b260-39c0f43003f8
+		summarizeBy: none
+		sourceColumn: kampagnenbeauftragter
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsquelle
+		dataType: string
+		lineageTag: 90e72c8d-c027-41eb-9b3a-3ee1432a3bd9
+		summarizeBy: none
+		sourceColumn: vertriebsquelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsweg
+		dataType: string
+		lineageTag: 240b1a07-c22b-4ca4-8f9f-52b9bb10ad24
+		summarizeBy: none
+		sourceColumn: vertriebsweg
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsbeauftragter
+		dataType: string
+		lineageTag: 11d03d80-d6ec-4c55-a009-60d0ace559a1
+		summarizeBy: none
+		sourceColumn: vertriebsbeauftragter
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsorganisation
+		dataType: string
+		lineageTag: bf9a99c2-6ac3-40da-a644-6633658e8e30
+		summarizeBy: none
+		sourceColumn: vertriebsorganisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column nielsenbezirke
+		dataType: string
+		lineageTag: adc4d9ef-0f7b-4d91-b912-128f660a6a72
+		summarizeBy: none
+		sourceColumn: nielsenbezirke
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsgebiet
+		dataType: string
+		lineageTag: f73afe8f-5c09-410c-a0ea-fd1ea38d615c
+		summarizeBy: none
+		sourceColumn: vertriebsgebiet
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsrisiko
+		dataType: string
+		lineageTag: c9094594-c789-43be-bba3-2f3f1552dd26
+		summarizeBy: none
+		sourceColumn: vertriebsrisiko
+
+		annotation SummarizationSetBy = Automatic
+
+	column nachfrageverhalten
+		dataType: string
+		lineageTag: 2ed19cf3-d40e-423b-8591-fab4b2bc33df
+		summarizeBy: none
+		sourceColumn: nachfrageverhalten
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsphase
+		dataType: string
+		lineageTag: 325eae14-892d-4c34-88df-c3c617ca0b87
+		summarizeBy: none
+		sourceColumn: vertriebsphase
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsstatus
+		dataType: string
+		lineageTag: c0ebb36b-6a6d-4328-bc70-6fa64714ffec
+		summarizeBy: none
+		sourceColumn: vertriebsstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundengruppe1
+		dataType: string
+		lineageTag: f56bc3f6-eefe-406e-91a2-2b2328b438c8
+		summarizeBy: none
+		sourceColumn: kundengruppe1
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertragsunterzeichner
+		dataType: string
+		lineageTag: ac16e2e5-4600-4e01-8546-babede6e61a9
+		summarizeBy: none
+		sourceColumn: vertragsunterzeichner
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebskampagne
+		dataType: string
+		lineageTag: 96451a39-5440-43cb-9518-ad3a973813c7
+		summarizeBy: none
+		sourceColumn: vertriebskampagne
+
+		annotation SummarizationSetBy = Automatic
+
+	column salesreminderfrom
+		dataType: string
+		lineageTag: 06ae434c-b9da-4878-aad0-b7fac123b66c
+		summarizeBy: none
+		sourceColumn: salesreminderfrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column salesreminderto
+		dataType: string
+		lineageTag: 2291036c-9a51-4a87-ac22-fd985cacbab2
+		summarizeBy: none
+		sourceColumn: salesreminderto
+
+		annotation SummarizationSetBy = Automatic
+
+	column salestemplate
+		dataType: string
+		lineageTag: bdd57cf0-43ec-4bee-8d86-dab9feffa617
+		summarizeBy: none
+		sourceColumn: salestemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column salesdescription
+		dataType: string
+		lineageTag: f10bf486-2926-4b0c-b365-88807c2a1ced
+		summarizeBy: none
+		sourceColumn: salesdescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column debitorenbetreuer_id
+		dataType: string
+		lineageTag: e5e4a159-a782-4327-9482-cae1079eb8e1
+		summarizeBy: none
+		sourceColumn: debitorenbetreuer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column debitorenbetreuer
+		dataType: string
+		lineageTag: c18a0d2f-8905-414d-816a-9a2de1eecae1
+		summarizeBy: none
+		sourceColumn: debitorenbetreuer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kreditorpersonid
+		dataType: string
+		lineageTag: 5e87a384-1d2f-4e3b-a3ff-21e5c9239f12
+		summarizeBy: none
+		sourceColumn: kreditorpersonid
+
+		annotation SummarizationSetBy = Automatic
+
+	column kreditorpersondisplay
+		dataType: string
+		lineageTag: d51bae7e-ce40-4e5f-bfa1-d30a9347dfbc
+		summarizeBy: none
+		sourceColumn: kreditorpersondisplay
+
+		annotation SummarizationSetBy = Automatic
+
+	column komplettlieferung
+		dataType: string
+		lineageTag: 9148e56b-90bd-44a8-9772-27fc9d9cfd3b
+		summarizeBy: none
+		sourceColumn: komplettlieferung
+
+		annotation SummarizationSetBy = Automatic
+
+	column incoterms
+		dataType: string
+		lineageTag: 56ae5acc-ef12-4f41-b467-8f3f2e9f546e
+		summarizeBy: none
+		sourceColumn: incoterms
+
+		annotation SummarizationSetBy = Automatic
+
+	column sanktionsstatus
+		dataType: string
+		lineageTag: 27980fce-a0c3-421b-98ed-fdb36ceba592
+		summarizeBy: none
+		sourceColumn: sanktionsstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column sanctionuid
+		dataType: string
+		lineageTag: 64051f8a-9cfa-4bac-9680-bf53a7929cf6
+		summarizeBy: none
+		sourceColumn: sanctionuid
+
+		annotation SummarizationSetBy = Automatic
+
+	column rolle
+		dataType: string
+		lineageTag: 424b777e-2a6d-4e28-b47b-9b800dbd6595
+		summarizeBy: none
+		sourceColumn: rolle
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_vorsystem
+		dataType: string
+		lineageTag: 74fa993b-7144-413c-be32-38a361e175e8
+		summarizeBy: none
+		sourceColumn: id_vorsystem
+
+		annotation SummarizationSetBy = Automatic
+
+	column versandart_faktura
+		dataType: string
+		lineageTag: 828b088e-5891-413c-b641-b4981daac077
+		summarizeBy: none
+		sourceColumn: versandart_faktura
+
+		annotation SummarizationSetBy = Automatic
+
+	column versandart_faktura_benutzerdefiniert
+		dataType: string
+		lineageTag: 099251d8-9c61-4a87-afc3-a6d310e56343
+		summarizeBy: none
+		sourceColumn: versandart_faktura_benutzerdefiniert
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredpurchaseordersendmethod
+		dataType: string
+		lineageTag: 7682c751-637b-4ff8-8373-de5db936e2c1
+		summarizeBy: none
+		sourceColumn: preferredpurchaseordersendmethod
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_1
+		dataType: string
+		lineageTag: 5ece8295-4f6e-4f42-876b-ff51afc5b072
+		summarizeBy: none
+		sourceColumn: ehrenamt_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_2
+		dataType: string
+		lineageTag: 2331e792-97d5-48c2-b8d1-4c21bc66045b
+		summarizeBy: none
+		sourceColumn: ehrenamt_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_3
+		dataType: string
+		lineageTag: e627a343-fe70-4e37-997f-10e5fde92d64
+		summarizeBy: none
+		sourceColumn: ehrenamt_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_4
+		dataType: string
+		lineageTag: 504baa66-0109-43ff-bbc9-b84e22be4598
+		summarizeBy: none
+		sourceColumn: ehrenamt_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_5
+		dataType: string
+		lineageTag: e75906a0-0af0-4483-b8c9-13a8c219f037
+		summarizeBy: none
+		sourceColumn: ehrenamt_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_6
+		dataType: string
+		lineageTag: c165eace-af92-40fa-83e3-992bf01c8a22
+		summarizeBy: none
+		sourceColumn: ehrenamt_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column kenntnisse
+		dataType: string
+		lineageTag: 0c77253e-b454-4fd6-a5cb-7fa73f8274e6
+		summarizeBy: none
+		sourceColumn: kenntnisse
+
+		annotation SummarizationSetBy = Automatic
+
+	column sprachen
+		dataType: string
+		lineageTag: 642ef68d-20f8-47e3-ab07-13a7535830c1
+		summarizeBy: none
+		sourceColumn: sprachen
+
+		annotation SummarizationSetBy = Automatic
+
+	column zusatzqualifikationen
+		dataType: string
+		lineageTag: ac5f0b2b-4ba0-468a-b3e7-6eea61b1b3cf
+		summarizeBy: none
+		sourceColumn: zusatzqualifikationen
+
+		annotation SummarizationSetBy = Automatic
+
+	column sonstiges
+		dataType: string
+		lineageTag: 085e423e-58f0-4767-a626-fe1d1180261a
+		summarizeBy: none
+		sourceColumn: sonstiges
+
+		annotation SummarizationSetBy = Automatic
+
+	column beginn
+		dataType: string
+		lineageTag: 11458fdf-6d1f-466b-a85c-e9745f9b884a
+		summarizeBy: none
+		sourceColumn: beginn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ende
+		dataType: string
+		lineageTag: a8930bbb-0b40-4135-a57c-3164bdcbcaa1
+		summarizeBy: none
+		sourceColumn: ende
+
+		annotation SummarizationSetBy = Automatic
+
+	column jahresurlaubstage
+		dataType: string
+		lineageTag: 30568306-d898-44c0-92a2-68cb09c9fa08
+		summarizeBy: none
+		sourceColumn: jahresurlaubstage
+
+		annotation SummarizationSetBy = Automatic
+
+	column einstufung_gf_zone_bg
+		dataType: string
+		lineageTag: 329a58c2-f063-4235-952f-1f4e61896d09
+		summarizeBy: none
+		sourceColumn: einstufung_gf_zone_bg
+
+		annotation SummarizationSetBy = Automatic
+
+	column krankenversicherung
+		dataType: string
+		lineageTag: b1fa1659-8fff-4cfd-bcbb-48d7160d05df
+		summarizeBy: none
+		sourceColumn: krankenversicherung
+
+		annotation SummarizationSetBy = Automatic
+
+	column krankenkasse
+		dataType: string
+		lineageTag: 2ea68ca9-e453-4389-b2a0-304f1b912d9f
+		summarizeBy: none
+		sourceColumn: krankenkasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column pflegekasse
+		dataType: string
+		lineageTag: f00f3939-1879-4a00-a3a9-03022ed6fbc8
+		summarizeBy: none
+		sourceColumn: pflegekasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column rentenversicherungsnummer
+		dataType: string
+		lineageTag: c5c1d41c-adea-403b-892e-7387bc06c424
+		summarizeBy: none
+		sourceColumn: rentenversicherungsnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column monatliche_vorauszahlung
+		dataType: string
+		lineageTag: 846aa266-b22d-49d2-b750-b85240e73e57
+		summarizeBy: none
+		sourceColumn: monatliche_vorauszahlung
+
+		annotation SummarizationSetBy = Automatic
+
+	column stundenlohn
+		dataType: string
+		lineageTag: 9d3b3083-50ef-4caf-ad66-b9e5273d8174
+		summarizeBy: none
+		sourceColumn: stundenlohn
+
+		annotation SummarizationSetBy = Automatic
+
+	column wochenarbeitszeit
+		dataType: string
+		lineageTag: 0cac17f5-f390-48ab-93ce-4eccf0218455
+		summarizeBy: none
+		sourceColumn: wochenarbeitszeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column steuerberaterkammer
+		dataType: string
+		lineageTag: d4396f83-c6c4-49cd-9334-dc6ed75b8684
+		summarizeBy: none
+		sourceColumn: steuerberaterkammer
+
+		annotation SummarizationSetBy = Automatic
+
+	column steuerberaternummer
+		dataType: string
+		lineageTag: fb98da77-a7cb-47da-9512-695e2c9703fe
+		summarizeBy: none
+		sourceColumn: steuerberaternummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column crefonummer
+		dataType: string
+		lineageTag: e36e9c7c-5e33-4f43-848a-384a05158789
+		summarizeBy: none
+		sourceColumn: crefonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column creditreform_abgerufen_am
+		dataType: string
+		lineageTag: 073e2875-5e5c-4372-8acc-d386f6c15b01
+		summarizeBy: none
+		sourceColumn: creditreform_abgerufen_am
+
+		annotation SummarizationSetBy = Automatic
+
+	column creditreform_abgerufen_von
+		dataType: string
+		lineageTag: 428d5d25-b61c-47aa-b8ea-dc9803e0da5d
+		summarizeBy: none
+		sourceColumn: creditreform_abgerufen_von
+
+		annotation SummarizationSetBy = Automatic
+
+	column letzte_kampagne
+		dataType: string
+		lineageTag: 1ad506ff-1008-4240-9bbe-72c068d3e0d8
+		summarizeBy: none
+		sourceColumn: letzte_kampagne
+
+		annotation SummarizationSetBy = Automatic
+
+	column debitor_zahlungsart
+		dataType: string
+		lineageTag: c6b2164e-df65-44a3-8f2f-bcc7c04e46b2
+		summarizeBy: none
+		sourceColumn: debitor_zahlungsart
+
+		annotation SummarizationSetBy = Automatic
+
+	column kreditor_zahlungsart
+		dataType: string
+		lineageTag: 9c15aa7e-0b88-4c88-a93a-63de832517d4
+		summarizeBy: none
+		sourceColumn: kreditor_zahlungsart
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_status_id
+		dataType: string
+		lineageTag: 6c214b5f-9dc8-446e-a04f-c8da0b3970cf
+		summarizeBy: none
+		sourceColumn: lead_status_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column leadstatus
+		dataType: string
+		lineageTag: e4493f08-090c-4511-8044-171303256335
+		summarizeBy: none
+		sourceColumn: leadstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsstatus_id
+		dataType: string
+		lineageTag: 29a47cb5-ebe5-4b0a-8f19-a0912ca260b7
+		summarizeBy: none
+		sourceColumn: vertriebsstatus_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsstatus1
+		dataType: string
+		lineageTag: 25cfd07a-9b6e-4659-8e0b-d744aec13f13
+		summarizeBy: none
+		sourceColumn: vertriebsstatus1
+
+		annotation SummarizationSetBy = Automatic
+
+	column kundenstatus_id
+		dataType: string
+		lineageTag: 892fdde9-d7c0-48a6-92c9-77d15bf39281
+		summarizeBy: none
+		sourceColumn: kundenstatus_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscustomerdisplay
+		dataType: string
+		lineageTag: 7277ea94-26d0-474f-89eb-ae38279cbe86
+		summarizeBy: none
+		sourceColumn: statuscustomerdisplay
+
+		annotation SummarizationSetBy = Automatic
+
+	column leadstatus_1
+		dataType: string
+		lineageTag: 6aa7f829-6aea-40c4-916f-5c4350977ca1
+		summarizeBy: none
+		sourceColumn: leadstatus_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_klassifikation
+		dataType: string
+		lineageTag: dad7655e-9f6d-460e-853c-cdb88a172ec6
+		summarizeBy: none
+		sourceColumn: lead_klassifikation
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_identifizierung
+		dataType: string
+		lineageTag: 624bc855-f96d-4c08-9625-38081b284d29
+		summarizeBy: none
+		sourceColumn: lead_identifizierung
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsinformationen
+		dataType: string
+		lineageTag: 556a13ad-72df-46d3-8ac9-afd886e22536
+		summarizeBy: none
+		sourceColumn: vertriebsinformationen
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_qualifizierung
+		dataType: string
+		lineageTag: caf35b9f-a855-4008-af18-6e3a2fc0cbba
+		summarizeBy: none
+		sourceColumn: lead_qualifizierung
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_qualifizierung_punkte
+		dataType: string
+		lineageTag: 4f5205ef-48ff-42c6-b3ff-9db57da0751e
+		summarizeBy: none
+		sourceColumn: lead_qualifizierung_punkte
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_budget
+		dataType: string
+		lineageTag: e40e02c4-278c-4b14-bc77-31b56ecabf3a
+		summarizeBy: none
+		sourceColumn: lead_budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_budget_betrag_in_euro
+		dataType: string
+		lineageTag: 49cda593-9195-4ae3-833b-e2f58c0229df
+		summarizeBy: none
+		sourceColumn: lead_budget_betrag_in_euro
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_budget_punkte
+		dataType: string
+		lineageTag: 80b15852-6f5a-4480-b0d9-022b3ad6deb6
+		summarizeBy: none
+		sourceColumn: lead_budget_punkte
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_authority
+		dataType: string
+		lineageTag: 3bbdfe58-2699-488d-b068-06103e5af66e
+		summarizeBy: none
+		sourceColumn: lead_authority
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_authority_punkte
+		dataType: string
+		lineageTag: 3b1e17e3-2f1b-4e5b-b561-a8c7afdb3fae
+		summarizeBy: none
+		sourceColumn: lead_authority_punkte
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_need
+		dataType: string
+		lineageTag: 6a8d1791-943b-4539-ac2d-42dec049b63f
+		summarizeBy: none
+		sourceColumn: lead_need
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_need_punkte
+		dataType: string
+		lineageTag: b34982d1-a467-477d-8b31-96159a19cba7
+		summarizeBy: none
+		sourceColumn: lead_need_punkte
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_time
+		dataType: string
+		lineageTag: 560ae55f-70e9-46ce-9138-247f9066b3ff
+		summarizeBy: none
+		sourceColumn: lead_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_time_punkte
+		dataType: string
+		lineageTag: 48fdff0d-ff9a-4dcf-9c30-f790bfff8480
+		summarizeBy: none
+		sourceColumn: lead_time_punkte
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_bant_summe
+		dataType: string
+		lineageTag: 7104e1e6-6804-488d-853a-f8edee117ca1
+		summarizeBy: none
+		sourceColumn: lead_bant_summe
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_kampagne
+		dataType: string
+		lineageTag: e971cd80-5dee-48e1-803c-a8096a5b2f60
+		summarizeBy: none
+		sourceColumn: lead_kampagne
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_newsletter
+		dataType: string
+		lineageTag: 9cc02f1c-9517-4759-a597-4121c4987566
+		summarizeBy: none
+		sourceColumn: lead_newsletter
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedclassification
+		dataType: string
+		lineageTag: 6d25b4d9-49d3-4410-9fa1-b8c10741648b
+		summarizeBy: none
+		sourceColumn: interestedclassification
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestednotice
+		dataType: string
+		lineageTag: 8a881bbd-b6b5-4785-870c-ee23b192364c
+		summarizeBy: none
+		sourceColumn: interestednotice
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedqualification
+		dataType: string
+		lineageTag: 4153109d-dcb0-484e-89fd-7dd4eca1ceed
+		summarizeBy: none
+		sourceColumn: interestedqualification
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedqualificationrange
+		dataType: string
+		lineageTag: 6ec70b46-73d3-4dd3-9e71-aec5c3b20ae2
+		summarizeBy: none
+		sourceColumn: interestedqualificationrange
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedbudget
+		dataType: string
+		lineageTag: ddfe2b60-9419-47b6-90bf-22e332ce062c
+		summarizeBy: none
+		sourceColumn: interestedbudget
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedbudgetsum
+		dataType: string
+		lineageTag: afe093f8-4055-4e89-8c3d-ae655d74c95d
+		summarizeBy: none
+		sourceColumn: interestedbudgetsum
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedbudgetpoints
+		dataType: string
+		lineageTag: 6d928040-0e11-4d3e-b168-8bc075565a6c
+		summarizeBy: none
+		sourceColumn: interestedbudgetpoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedauthority
+		dataType: string
+		lineageTag: 9614146e-ff07-43fc-8301-db5355ec8389
+		summarizeBy: none
+		sourceColumn: interestedauthority
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedauthoritypoints
+		dataType: string
+		lineageTag: ce1546c3-357a-484a-9d6f-31f18aebcde1
+		summarizeBy: none
+		sourceColumn: interestedauthoritypoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedneed
+		dataType: string
+		lineageTag: 85ecc166-9693-4dbf-a48c-2ba15d5c351e
+		summarizeBy: none
+		sourceColumn: interestedneed
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedneedpoints
+		dataType: string
+		lineageTag: b1b6fae8-64e8-43b8-b48b-80c0db045093
+		summarizeBy: none
+		sourceColumn: interestedneedpoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedtime
+		dataType: string
+		lineageTag: 17789130-86b0-4163-8940-1b9885d8e6c6
+		summarizeBy: none
+		sourceColumn: interestedtime
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedtimepoints
+		dataType: string
+		lineageTag: 05cfa28c-d5e4-40c6-aa45-6bafd98dd2ad
+		summarizeBy: none
+		sourceColumn: interestedtimepoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedtransfer
+		dataType: string
+		lineageTag: e64f14b1-15a9-441c-8b9c-637abfa4af7b
+		summarizeBy: none
+		sourceColumn: interestedtransfer
+
+		annotation SummarizationSetBy = Automatic
+
+	column interestedsumpoints
+		dataType: string
+		lineageTag: 8db9ded6-e16e-481e-bcf6-dcb81a5cfd0e
+		summarizeBy: none
+		sourceColumn: interestedsumpoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column informationen_vom_vertrieb
+		dataType: string
+		lineageTag: f1c794c2-7128-4648-b5f8-17f79a23fd72
+		summarizeBy: none
+		sourceColumn: informationen_vom_vertrieb
+
+		annotation SummarizationSetBy = Automatic
+
+	column zeiterfassung
+		dataType: string
+		lineageTag: d4d2c895-4e4f-4bda-9c62-4e5638593d03
+		summarizeBy: none
+		sourceColumn: zeiterfassung
+
+		annotation SummarizationSetBy = Automatic
+
+	column debitor_kreditlimit
+		dataType: string
+		lineageTag: e539939f-3d77-4727-9642-2525082bed20
+		summarizeBy: none
+		sourceColumn: debitor_kreditlimit
+
+		annotation SummarizationSetBy = Automatic
+
+	column kreditor_kreditlimit
+		dataType: string
+		lineageTag: 7c8e8b4a-2d63-4ac8-a642-cbe6baaef8cc
+		summarizeBy: none
+		sourceColumn: kreditor_kreditlimit
+
+		annotation SummarizationSetBy = Automatic
+
+	column creditreform_kreditlimit
+		dataType: string
+		lineageTag: 3faeea31-e0ff-437a-9ce0-610d02f9b5c6
+		summarizeBy: none
+		sourceColumn: creditreform_kreditlimit
+
+		annotation SummarizationSetBy = Automatic
+
+	column textsuche
+		dataType: string
+		lineageTag: d4b89311-a31a-4895-ae92-51feb2ee74cc
+		summarizeBy: none
+		sourceColumn: textsuche
+
+		annotation SummarizationSetBy = Automatic
+
+	column aufruf_marketingbeauftragter
+		dataType: string
+		lineageTag: 65ff443d-cb05-4350-b3e3-25319163c7a0
+		summarizeBy: none
+		sourceColumn: aufruf_marketingbeauftragter
+
+		annotation SummarizationSetBy = Automatic
+
+	column aufruf_vertriebsbeauftragter
+		dataType: string
+		lineageTag: 663a9098-dbc8-41da-a7c0-8bb1c1c3f686
+		summarizeBy: none
+		sourceColumn: aufruf_vertriebsbeauftragter
+
+		annotation SummarizationSetBy = Automatic
+
+	column zuletzt_von_kampagne_in_lead_konvertiert_id
+		dataType: string
+		lineageTag: 9a644bd9-ccc5-462d-a802-4cecce8ea82f
+		summarizeBy: none
+		sourceColumn: zuletzt_von_kampagne_in_lead_konvertiert_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column zuletzt_von_kampagne_in_lead_konvertiert
+		dataType: string
+		lineageTag: 3a83a3f8-c3be-4d96-84cb-ae6233af9e1d
+		summarizeBy: none
+		sourceColumn: zuletzt_von_kampagne_in_lead_konvertiert
+
+		annotation SummarizationSetBy = Automatic
+
+	column verbleibendes_bestandsprodukt_id
+		dataType: string
+		lineageTag: 11fbf4d5-6720-4914-9113-5166706a2256
+		summarizeBy: none
+		sourceColumn: verbleibendes_bestandsprodukt_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column verbleibendes_bestandsprodukt
+		dataType: string
+		lineageTag: bba2e8ab-55c0-4e68-8a43-e43bc81049fa
+		summarizeBy: none
+		sourceColumn: verbleibendes_bestandsprodukt
+
+		annotation SummarizationSetBy = Automatic
+
+	column wettbewerbsprodukte_id
+		dataType: string
+		lineageTag: 0e8c8e73-0b97-46b2-8e01-41f556aa57ce
+		summarizeBy: none
+		sourceColumn: wettbewerbsprodukte_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column wettbewerbsprodukte
+		dataType: string
+		lineageTag: 37b2bbc1-3a98-4aaf-88a1-11a1aeeb3e65
+		summarizeBy: none
+		sourceColumn: wettbewerbsprodukte
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebspotential
+		dataType: string
+		lineageTag: b62ee7cd-b2d6-4e03-ae94-b3f4e9735785
+		summarizeBy: none
+		sourceColumn: vertriebspotential
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebsupgrade
+		dataType: string
+		lineageTag: e28dc43b-43fb-49fb-98ac-d2130549a534
+		summarizeBy: none
+		sourceColumn: vertriebsupgrade
+
+		annotation SummarizationSetBy = Automatic
+
+	column betreuender_servicepartner_id
+		dataType: string
+		lineageTag: ea8fe2cd-56e2-4ed3-98f6-de610680e47d
+		summarizeBy: none
+		sourceColumn: betreuender_servicepartner_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column betreuender_servicepartner
+		dataType: string
+		lineageTag: 540f1d50-04ca-473e-a0d6-7246bf2553cc
+		summarizeBy: none
+		sourceColumn: betreuender_servicepartner
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitivestrength
+		dataType: string
+		lineageTag: 45bc8cbd-a957-4afb-a2d4-9f901973487b
+		summarizeBy: none
+		sourceColumn: competitivestrength
+
+		annotation SummarizationSetBy = Automatic
+
+	column entscheidungsdatum
+		dataType: string
+		lineageTag: 21536485-cd44-457b-a7b5-5bfb6dc85d9a
+		summarizeBy: none
+		sourceColumn: entscheidungsdatum
+
+		annotation SummarizationSetBy = Automatic
+
+	column wiedervorlagedatum
+		dataType: string
+		lineageTag: 9d0d56ed-2a75-433b-aa4f-ebe03aefc479
+		summarizeBy: none
+		sourceColumn: wiedervorlagedatum
+
+		annotation SummarizationSetBy = Automatic
+
+	column facebook_link
+		dataType: string
+		lineageTag: c8bd3304-b7bf-4537-a74e-19e23e603d0b
+		summarizeBy: none
+		sourceColumn: facebook_link
+
+		annotation SummarizationSetBy = Automatic
+
+	column art_der_partnerschaft
+		dataType: string
+		lineageTag: 38c24fc5-9210-49c0-8739-ea52105185a5
+		summarizeBy: none
+		sourceColumn: art_der_partnerschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_der_partnerschaft
+		dataType: string
+		lineageTag: 351fe9f9-9120-4834-9d15-bc70a8333645
+		summarizeBy: none
+		sourceColumn: status_der_partnerschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column partner_seit
+		dataType: string
+		lineageTag: a18ecfc2-e460-43a2-b65b-7c935832a9ae
+		summarizeBy: none
+		sourceColumn: partner_seit
+
+		annotation SummarizationSetBy = Automatic
+
+	column partner_bis
+		dataType: string
+		lineageTag: 6db61a19-f997-441a-98d7-cf59c8232a20
+		summarizeBy: none
+		sourceColumn: partner_bis
+
+		annotation SummarizationSetBy = Automatic
+
+	column erfahrungswerte
+		dataType: string
+		lineageTag: e7d304f1-760f-4f59-bb38-00a2412dd1e7
+		summarizeBy: none
+		sourceColumn: erfahrungswerte
+
+		annotation SummarizationSetBy = Automatic
+
+	column beschreibung_der_partnerschaft
+		dataType: string
+		lineageTag: 76d9b726-c44c-42e8-9515-809c98366d36
+		summarizeBy: none
+		sourceColumn: beschreibung_der_partnerschaft
+
+		annotation SummarizationSetBy = Automatic
+
+	column kompetenz_beim_hag
+		dataType: string
+		lineageTag: 96c0304a-cbfb-4233-8e87-ee3d18be39f2
+		summarizeBy: none
+		sourceColumn: kompetenz_beim_hag
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorgesetzter_beim_hag
+		dataType: string
+		lineageTag: a713a17a-c613-4545-8117-b92be8feae72
+		summarizeBy: none
+		sourceColumn: vorgesetzter_beim_hag
+
+		annotation SummarizationSetBy = Automatic
+
+	column vorgesetzter_beim_hag1
+		dataType: string
+		lineageTag: 60cc0c33-2d2a-4b2c-8f5e-a220cdbd5cf1
+		summarizeBy: none
+		sourceColumn: vorgesetzter_beim_hag1
+
+		annotation SummarizationSetBy = Automatic
+
+	column generelles_anzeigen_beim_hag
+		dataType: string
+		lineageTag: c33d9f69-4f24-4b0a-b97d-5e87b25276f6
+		summarizeBy: none
+		sourceColumn: generelles_anzeigen_beim_hag
+
+		annotation SummarizationSetBy = Automatic
+
+	column erfahrungswerte1
+		dataType: string
+		lineageTag: 46972f3f-5efe-4abe-895e-cdb95ba014b9
+		summarizeBy: none
+		sourceColumn: erfahrungswerte1
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitszeit_kommentar
+		dataType: string
+		lineageTag: c0619317-9b3a-468a-b898-56965e8eebe3
+		summarizeBy: none
+		sourceColumn: arbeitszeit_kommentar
+
+		annotation SummarizationSetBy = Automatic
+
+	column jahresurlaubstage1
+		dataType: string
+		lineageTag: a1e0ae97-891a-4f0e-8296-0a3fd3c7ab03
+		summarizeBy: none
+		sourceColumn: jahresurlaubstage1
+
+		annotation SummarizationSetBy = Automatic
+
+	column einheit_der_arbeitszeit
+		dataType: string
+		lineageTag: b41443c0-2171-4dda-bbb3-4c2d9f9cef9d
+		summarizeBy: none
+		sourceColumn: einheit_der_arbeitszeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column interner_stundenverrechnungssatz
+		dataType: string
+		lineageTag: 908e0215-f598-4cb7-ba4f-738e9c0ab967
+		summarizeBy: none
+		sourceColumn: interner_stundenverrechnungssatz
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignoreoutgoinginvoicerun
+		dataType: string
+		lineageTag: aab0d8c2-5518-46c6-aa15-c0302c538203
+		summarizeBy: none
+		sourceColumn: ignoreoutgoinginvoicerun
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignoriert_am
+		dataType: string
+		lineageTag: 3a00f852-d4da-4daa-9a06-ef59abcc1c15
+		summarizeBy: none
+		sourceColumn: ignoriert_am
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignoreoutgoinginvoicerunuid
+		dataType: string
+		lineageTag: f6d264d9-a807-4344-9f4f-220c947aa89e
+		summarizeBy: none
+		sourceColumn: ignoreoutgoinginvoicerunuid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignoriert_durch
+		dataType: string
+		lineageTag: fe654263-0eb6-4f4c-a65a-8fa30a9a1b0b
+		summarizeBy: none
+		sourceColumn: ignoriert_durch
+
+		annotation SummarizationSetBy = Automatic
+
+	column centerdevicecollectionname
+		dataType: string
+		lineageTag: 7ca2d850-6af3-4be9-b2d6-eaac8f2a40d4
+		summarizeBy: none
+		sourceColumn: centerdevicecollectionname
+
+		annotation SummarizationSetBy = Automatic
+
+	column centerdevicecollectionid
+		dataType: string
+		lineageTag: 5d83f254-6cb4-4f55-b6aa-ad20499b8ebd
+		summarizeBy: none
+		sourceColumn: centerdevicecollectionid
+
+		annotation SummarizationSetBy = Automatic
+
+	column managedcollectionname
+		dataType: string
+		lineageTag: b7370ef4-aa27-488f-ba83-1e820f9c89f6
+		summarizeBy: none
+		sourceColumn: managedcollectionname
+
+		annotation SummarizationSetBy = Automatic
+
+	column managedcollectionid
+		dataType: string
+		lineageTag: 95a0e4ba-e0fb-4a77-a946-34eec5257371
+		summarizeBy: none
+		sourceColumn: managedcollectionid
+
+		annotation SummarizationSetBy = Automatic
+
+	column gesellschaft_1
+		dataType: string
+		lineageTag: e37f1a33-4106-4450-a72c-b15b93df24cd
+		summarizeBy: none
+		sourceColumn: gesellschaft_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column consolidationorganisationid
+		dataType: string
+		lineageTag: 95edfbf4-2e2f-4bab-9ad1-fd68c73c4ae2
+		summarizeBy: none
+		sourceColumn: consolidationorganisationid
+
+		annotation SummarizationSetBy = Automatic
+
+	column consolidationorganisationname
+		dataType: string
+		lineageTag: 2fd59f22-99e4-4eeb-8b6a-0783b7033710
+		summarizeBy: none
+		sourceColumn: consolidationorganisationname
+
+		annotation SummarizationSetBy = Automatic
+
+	column consolidationcontactid
+		dataType: string
+		lineageTag: 060bf2d6-9e2e-4b64-bf41-0d1e8de7d049
+		summarizeBy: none
+		sourceColumn: consolidationcontactid
+
+		annotation SummarizationSetBy = Automatic
+
+	column consolidationcontactname
+		dataType: string
+		lineageTag: 980410b7-2676-4691-81dc-d6038181c5d7
+		summarizeBy: none
+		sourceColumn: consolidationcontactname
+
+		annotation SummarizationSetBy = Automatic
+
+	column externalnumber1
+		dataType: string
+		lineageTag: 450da7e6-5c3b-42be-930f-9813f761dea9
+		summarizeBy: none
+		sourceColumn: externalnumber1
+
+		annotation SummarizationSetBy = Automatic
+
+	column externalnumber2
+		dataType: string
+		lineageTag: 4e86771f-ce04-442c-ac2a-11d7712a7ea2
+		summarizeBy: none
+		sourceColumn: externalnumber2
+
+		annotation SummarizationSetBy = Automatic
+
+	column externalnumber3
+		dataType: string
+		lineageTag: 2ae37042-b0ec-4556-9e08-b03b83ca5b61
+		summarizeBy: none
+		sourceColumn: externalnumber3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignorecorrection
+		dataType: string
+		lineageTag: 156cdd4e-0285-4f94-916a-8e5ed4a31cc6
+		summarizeBy: none
+		sourceColumn: ignorecorrection
+
+		annotation SummarizationSetBy = Automatic
+
+	column praxisform
+		dataType: string
+		lineageTag: 1647c116-c3a5-4989-8cf7-356396e85cf3
+		summarizeBy: none
+		sourceColumn: praxisform
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontaktaufnahme_erlaubt
+		dataType: string
+		lineageTag: 10b8c948-b750-4a77-9767-b68b6a085cf6
+		summarizeBy: none
+		sourceColumn: kontaktaufnahme_erlaubt
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor
+		dataType: string
+		lineageTag: ff5239a2-ff6b-44f5-9e9c-62f37149d6bd
+		summarizeBy: none
+		sourceColumn: constructor
+
+		annotation SummarizationSetBy = Automatic
+
+	column a1_locked
+		dataType: string
+		lineageTag: 6fe20a73-9ee4-4b14-9891-f43b35dead41
+		summarizeBy: none
+		sourceColumn: a1_locked
+
+		annotation SummarizationSetBy = Automatic
+
+	column employeeaccounttype
+		dataType: string
+		lineageTag: 8aed5769-2973-42a7-b30b-33e168baebd7
+		summarizeBy: none
+		sourceColumn: employeeaccounttype
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_1
+		dataType: string
+		lineageTag: 9fe201b5-258b-42f2-8737-0ff3e3325edb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column weihnachtskarte_schicken
+		dataType: string
+		lineageTag: 9cf44466-15ab-432b-bca6-87124a5a1030
+		summarizeBy: none
+		sourceColumn: weihnachtskarte_schicken
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_1
+		dataType: string
+		lineageTag: 8bcad5e8-6d57-402b-a3f9-06d241f43ef1
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_1
+		dataType: string
+		lineageTag: fc0ababb-37e4-4da7-a21e-f437d944dafe
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_1
+		dataType: string
+		lineageTag: 774a7ee6-9341-4353-8f76-7e32eb71d5fd
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_1
+		dataType: string
+		lineageTag: 7281c61c-22d2-4aa4-ae56-3b84d2843a1f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_2
+		dataType: string
+		lineageTag: 553b82f1-c0a3-4b2b-8dc6-235d4d70a778
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_2
+		dataType: string
+		lineageTag: 698abe40-e440-473f-9d9b-82c81501399a
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_2
+		dataType: string
+		lineageTag: 63d2ac82-5fb7-48eb-a009-8268e4cd4e53
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_2
+		dataType: string
+		lineageTag: 091a3b62-58d5-4be8-90a1-90c395361a8d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_2
+		dataType: string
+		lineageTag: 01d458c2-a170-4967-90a4-7a0c8b270308
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_3
+		dataType: string
+		lineageTag: 1a470655-1447-4ce9-8c11-9e359e97df17
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_3
+		dataType: string
+		lineageTag: 89ebcb37-5db2-4329-888e-218957a716b2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_3
+		dataType: string
+		lineageTag: 10b2387e-3cf4-486b-90a4-cf50817f2cd0
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_3
+		dataType: string
+		lineageTag: 3bc2f66d-4d06-4ada-b79c-a909618da574
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_3
+		dataType: string
+		lineageTag: fcedfcce-7e58-4c5f-9d25-9cab19e60e73
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_3
+		dataType: string
+		lineageTag: d945ae65-ee99-429f-888a-4a62b4b5eed2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_4
+		dataType: string
+		lineageTag: 9f1cc1ce-87af-4102-8c69-3a4a2bde5592
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_4
+		dataType: string
+		lineageTag: ba173cef-3a4a-4a6e-af34-6630ec322a4f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_4
+		dataType: string
+		lineageTag: e8898d65-24c3-4cdd-8be8-983483f483a7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_4
+		dataType: string
+		lineageTag: 6f08c059-3b7d-4395-bd37-9994b53d20aa
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_4
+		dataType: string
+		lineageTag: af73bc87-6140-4831-b07c-2df624726492
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_4
+		dataType: string
+		lineageTag: 81b34b98-b113-4d9e-809b-2409e65b4985
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_5
+		dataType: string
+		lineageTag: 4219f9ec-116d-4aa4-adf6-32c99879069a
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_5
+		dataType: string
+		lineageTag: 84a7e1ce-2492-4f99-9cdd-d608c742684c
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_5
+		dataType: string
+		lineageTag: 4103a64c-36af-47c6-8879-51ada3cf15df
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_5
+		dataType: string
+		lineageTag: 6c293cbd-ae56-4e96-8208-196da446ae35
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_5
+		dataType: string
+		lineageTag: 279a803c-b487-439b-813b-ea5dd205527f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_5
+		dataType: string
+		lineageTag: 729568b3-c3e2-4009-80e2-17b4ce625035
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_6
+		dataType: string
+		lineageTag: 1a9105ee-886d-437f-9b08-cf17b3d53140
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_6
+		dataType: string
+		lineageTag: 888c3f1c-0cff-49ef-9d87-7c2f5d10e6a5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_6
+		dataType: string
+		lineageTag: b786f988-fa3e-4aa7-88eb-7738eb8d798d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_6
+		dataType: string
+		lineageTag: 0b129a65-5a59-468c-9f02-e3d6df9bb309
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_6
+		dataType: string
+		lineageTag: a35d2e2f-bb32-4312-af68-4730ab338f2d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_6
+		dataType: string
+		lineageTag: ffe79719-7b79-4d3c-955c-9b843249962b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_7
+		dataType: string
+		lineageTag: becc42f7-3e32-4ebb-8d6c-3964199fdda2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_7
+		dataType: string
+		lineageTag: f75a452e-7705-44cd-acc8-8a419c1bae29
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_7
+		dataType: string
+		lineageTag: e8d6f216-858d-422d-9cbb-038483fde960
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_7
+		dataType: string
+		lineageTag: bf3bdf56-48a1-499e-95d5-386a362b4efb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_7
+		dataType: string
+		lineageTag: d81d78e5-330b-4268-b292-2d095d5862d5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_7
+		dataType: string
+		lineageTag: b562f23d-0def-4f0b-a8c5-748a8552febb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_8
+		dataType: string
+		lineageTag: af5d39cf-5342-4874-9376-7ad17325e847
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_8
+		dataType: string
+		lineageTag: e844b9ef-29fc-4831-80ef-4c61ee938fe0
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_8
+		dataType: string
+		lineageTag: d7bd4396-3c18-4f13-9478-df803181f386
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_8
+		dataType: string
+		lineageTag: fb990f65-61e3-41fd-b2af-4e2e4486be73
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_8
+		dataType: string
+		lineageTag: 8e0e15fd-faad-4a8b-a533-39e3e2cfced7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_8
+		dataType: string
+		lineageTag: 9c3c1a96-0ff6-4a7c-a3da-213798d2d070
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_9
+		dataType: string
+		lineageTag: 9371957c-b173-407b-bd4f-1b06e4a568d6
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_9
+		dataType: string
+		lineageTag: f8489528-88e2-4466-a4e9-fd4ee438bff5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_9
+		dataType: string
+		lineageTag: e4adc6cc-e18b-455e-a811-1896f4c050c2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_9
+		dataType: string
+		lineageTag: 10cda9f3-d61e-413d-80e5-82caee79bb5d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_9
+		dataType: string
+		lineageTag: d9799592-8946-4123-8927-0d5aeb043c41
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_9
+		dataType: string
+		lineageTag: 1ec769b1-1ce5-4cbf-b9bf-abda11930604
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_10
+		dataType: string
+		lineageTag: 80c086c4-4781-4d52-88f7-cffe730caa6d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_10
+		dataType: string
+		lineageTag: bbdd7705-00a7-4094-a440-48b624ba6149
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_10
+		dataType: string
+		lineageTag: b9508b58-ff90-414b-bf73-592447da22c4
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_10
+		dataType: string
+		lineageTag: ff975f3e-5d05-4412-b529-7d5004621a7e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_10
+		dataType: string
+		lineageTag: 168afdb8-1e35-4e5a-b716-4722286363cb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_10
+		dataType: string
+		lineageTag: ff85433b-55af-41a1-a0c4-b07833ee46af
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_11
+		dataType: string
+		lineageTag: 63af157f-1539-43b4-8e7e-7ee26c75e8e6
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_11
+		dataType: string
+		lineageTag: a43c33a7-5df3-41c9-8bca-2ce07da7d41d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_11
+		dataType: string
+		lineageTag: 78fd0714-2c3a-44d7-9999-d72638d0b803
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_11
+		dataType: string
+		lineageTag: d17092d7-bb93-4566-ac38-0b0801e39872
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_11
+		dataType: string
+		lineageTag: 8d4179d9-0df7-4f18-a073-19228791693f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_11
+		dataType: string
+		lineageTag: 84d4eab0-66d8-4086-a71b-48da5b3bd725
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_11
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_12
+		dataType: string
+		lineageTag: 5209ba66-3f06-4fb5-808a-1b4edc27e69d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_12
+		dataType: string
+		lineageTag: b7dc3b65-37e7-4e45-89cb-1228003d69eb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_12
+		dataType: string
+		lineageTag: e595a159-db96-458c-8008-c5dfca5b8438
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_12
+		dataType: string
+		lineageTag: 693c15f3-200a-4b79-84df-7e4d04b9fc88
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_12
+		dataType: string
+		lineageTag: 78e7e313-0fc2-486c-b644-663d53b664c2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_12
+		dataType: string
+		lineageTag: 7523f153-2511-44a5-9d03-4c3235f9c599
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_12
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_13
+		dataType: string
+		lineageTag: 05e4b650-de02-4395-9afb-eb5167626fdf
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_13
+		dataType: string
+		lineageTag: 109c4c3a-d03e-4883-b986-64d5a43b4ac7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_13
+		dataType: string
+		lineageTag: c97cbf35-7f88-4c9b-af1f-a13071b0a830
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_13
+		dataType: string
+		lineageTag: 327bd88b-240b-4452-a8bb-30dda8f57856
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_13
+		dataType: string
+		lineageTag: 22e608a4-bdf9-47e4-9ed8-de52115d4262
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_13
+		dataType: string
+		lineageTag: 43a43e1a-1b5b-4978-8e55-43e0b6af0223
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_13
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_14
+		dataType: string
+		lineageTag: 8270f116-6a5b-4854-ae2d-8ea7c05757cc
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_14
+		dataType: string
+		lineageTag: 06b76658-fa07-4cd9-a778-7199f5dfb34a
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_14
+		dataType: string
+		lineageTag: 2ada1561-396e-4ae2-b421-443dc36386d7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_14
+		dataType: string
+		lineageTag: 0f3c3483-5d1e-40c2-a176-f177ddaee91f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_14
+		dataType: string
+		lineageTag: fadd53e6-a82c-411a-8d2a-1f515e87b307
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_14
+		dataType: string
+		lineageTag: 5ae17e04-172b-43a6-bafb-fc7c0947f0b3
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_15
+		dataType: string
+		lineageTag: 4df1b27e-c01a-4b5b-863d-818d126157b3
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_15
+		dataType: string
+		lineageTag: e48d2cf5-d7bc-4d34-bf78-653c3b92a1ab
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_15
+		dataType: string
+		lineageTag: 51b077a0-c202-40e1-90ce-37e1c055e9f4
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_15
+		dataType: string
+		lineageTag: 6546d4ab-1d7c-45b4-83fc-eb8f0a179734
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_15
+		dataType: string
+		lineageTag: 1dfafa66-43bd-4c85-9070-b3cb2a9773d5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_15
+		dataType: string
+		lineageTag: 000f8636-0b8a-4c40-bc61-2baae27b81ce
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_15
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_16
+		dataType: string
+		lineageTag: dc3a917d-75b3-4856-8520-81c073b41ffc
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_16
+		dataType: string
+		lineageTag: d199b60b-075a-40ef-b5a6-f9f98499215f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_16
+		dataType: string
+		lineageTag: 48e021ad-a3ce-406d-a740-059f1c8f3515
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_16
+		dataType: string
+		lineageTag: 747d68d9-5c6a-4ad5-9123-de4d9d599d18
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_16
+		dataType: string
+		lineageTag: f4a8d405-82c4-43d7-b86c-2bb0de11e92a
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_16
+		dataType: string
+		lineageTag: 6af0b2bb-c2a2-417b-90e5-2caccfcb6cbf
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_16
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_17
+		dataType: string
+		lineageTag: 3556e047-fe87-481f-a016-ed0227a42a16
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_17
+		dataType: string
+		lineageTag: b19db385-842d-40f2-a2d5-764ce2845bf2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_17
+		dataType: string
+		lineageTag: 1dcab174-6820-4ff1-b3c6-21a0f7ba9ee2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_17
+		dataType: string
+		lineageTag: 4df3cc9a-e3d1-4bf8-87f8-132ee96f6487
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_17
+		dataType: string
+		lineageTag: 82106b2b-a3c2-4dd0-bc25-1005a6f63840
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_17
+		dataType: string
+		lineageTag: 95f31e10-d20d-4b1c-a38c-7d4f23d614be
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_18
+		dataType: string
+		lineageTag: 2c1e1263-8bee-44bc-96a5-694f84681014
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_18
+		dataType: string
+		lineageTag: 79e42b01-767e-4ff4-9d59-541314af6965
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_18
+		dataType: string
+		lineageTag: 7bf80cc9-50e9-450f-bcc9-4c67d1bd7fd9
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_18
+		dataType: string
+		lineageTag: fe7f1f05-f17b-4a40-ba69-4d16cf518fa8
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_18
+		dataType: string
+		lineageTag: ddea84a1-680d-42c8-8082-1cde4c071c3b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_18
+		dataType: string
+		lineageTag: 3412303e-38ea-4ff1-b374-a90785081cb4
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_18
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_19
+		dataType: string
+		lineageTag: 5fe0520c-b533-485e-84be-9fc648a288c1
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_19
+		dataType: string
+		lineageTag: 6c8e5662-9311-460d-9546-5a9e70772618
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_19
+		dataType: string
+		lineageTag: 1f430616-0fc2-4d91-8494-ea723a7d06cd
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_19
+		dataType: string
+		lineageTag: 03966a3d-89ef-434a-8ff0-3cb14146b092
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_19
+		dataType: string
+		lineageTag: 6a2d4e7d-650f-4cd6-8a4b-1d657d0e9c07
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_19
+		dataType: string
+		lineageTag: 32cd894f-e3b9-40ec-bbc2-2663979af1b4
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_19
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_20
+		dataType: string
+		lineageTag: 3ed7c4ed-0f66-4596-be69-339c34c46d06
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_20
+		dataType: string
+		lineageTag: d471d994-7fbe-473e-89bb-2e6bbe00b4e7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_20
+		dataType: string
+		lineageTag: 0d0d4a8a-591b-49bf-abe4-2622593d7276
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_20
+		dataType: string
+		lineageTag: 643df1c9-e3b1-44de-85bd-b871f8fa455d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_20
+		dataType: string
+		lineageTag: acdc1c9b-2993-43dc-9674-b967e9997849
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_20
+		dataType: string
+		lineageTag: 01205daf-90d2-4888-ac4b-86a84e2b43b0
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_20
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_21
+		dataType: string
+		lineageTag: a12b14a7-5aad-4ae9-82b0-890206a4258b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_21
+		dataType: string
+		lineageTag: 58039264-76e1-44fd-96c4-3c2c3360935b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_21
+		dataType: string
+		lineageTag: f4a41e2d-5b2f-405e-b290-706e91ebef9e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_21
+		dataType: string
+		lineageTag: 927459d2-dc3a-4ed0-aea3-1b517c9a9bba
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_21
+		dataType: string
+		lineageTag: 5723d391-54ab-4d1c-b5e7-a5a149d5a722
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_21
+		dataType: string
+		lineageTag: 6a7f2f11-5bbc-4c8a-bd0f-095a72109f80
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_21
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_22
+		dataType: string
+		lineageTag: 18e5bc88-3886-42e6-b15c-6aa0aa58b526
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_22
+		dataType: string
+		lineageTag: 78e7f34e-92f3-4291-97dd-6abffd7f99d1
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_22
+		dataType: string
+		lineageTag: 09be668c-5c14-4f5a-91d2-fe21db86169f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_22
+		dataType: string
+		lineageTag: 49180643-79a3-403c-ab28-8cf88ba47f6e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_22
+		dataType: string
+		lineageTag: 76ff5915-1bb9-4ce3-ac89-7dee8fd71e2e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_22
+		dataType: string
+		lineageTag: b1c37f52-ef0e-44fd-b1fc-397044dbd6d1
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_22
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_23
+		dataType: string
+		lineageTag: ba81ded0-d6d4-4821-a042-1e0c6c3343af
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_23
+		dataType: string
+		lineageTag: 03580f8b-4888-4038-816d-410e95e509b3
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_23
+		dataType: string
+		lineageTag: f996d595-7255-4035-a968-e022d423c4f7
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_23
+		dataType: string
+		lineageTag: 8ea17098-6f47-4fe9-a0b6-1382c17b9feb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_23
+		dataType: string
+		lineageTag: f0615878-a58a-46ae-b655-56cd851b5ccc
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_23
+		dataType: string
+		lineageTag: 5a783f0c-5c1b-4dab-bd3a-5caba955b77d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_23
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_24
+		dataType: string
+		lineageTag: 85bc7ca1-e296-4162-a923-a097cff527b4
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_24
+		dataType: string
+		lineageTag: 14ca6c0c-bfbe-4e52-8689-b6adc1750950
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_24
+		dataType: string
+		lineageTag: c7b3f508-d078-410d-8697-386f1719abb2
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_24
+		dataType: string
+		lineageTag: 02bfa8e2-6da5-44db-a44a-8b3e8c2a2032
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_24
+		dataType: string
+		lineageTag: 326fd97f-84a7-4505-bc68-6513e81ced5b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_24
+		dataType: string
+		lineageTag: f9a17fcf-7a7a-415b-9758-2300a5043899
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_25
+		dataType: string
+		lineageTag: 62194e89-d415-424d-86b7-d5feff69df8c
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_25
+		dataType: string
+		lineageTag: 7b1fc794-8c44-4576-84ea-2ccb8d5a9b92
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_25
+		dataType: string
+		lineageTag: 436c722d-90b5-46c0-83f2-143e30b827eb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_25
+		dataType: string
+		lineageTag: 4aed0e64-6fbd-4576-9950-ebfa5510aa76
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_25
+		dataType: string
+		lineageTag: 41bcef7a-08fa-46bd-adad-0b511a968c2f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_25
+		dataType: string
+		lineageTag: 64a1c4b6-381a-4e05-851a-36066015c839
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_25
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_26
+		dataType: string
+		lineageTag: 7ff1e298-dbd2-4b25-8d98-4b56b0fd579c
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_26
+		dataType: string
+		lineageTag: ecd42d6c-554b-42b1-a4cd-e27843547653
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_26
+		dataType: string
+		lineageTag: 2535444a-32cb-4bde-b189-e1210aa19907
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_26
+		dataType: string
+		lineageTag: c3d16103-1fd2-4b2a-bd06-ddad0c27a0d6
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_26
+		dataType: string
+		lineageTag: 6906fbca-b145-4d72-85b1-e88e48155cdb
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_26
+		dataType: string
+		lineageTag: 72c05a61-f9fa-4f22-939f-412cc2e5078a
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_26
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_27
+		dataType: string
+		lineageTag: 9c65663e-b3cd-49ff-974b-ef87b13aa3b5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_27
+		dataType: string
+		lineageTag: ae821b88-ef81-4440-b42a-7ca652af6a98
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_27
+		dataType: string
+		lineageTag: 3d602fa5-f176-4e5a-acb9-d57cf03dae1d
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_27
+		dataType: string
+		lineageTag: b59802cc-34e5-447d-8074-0e65273800d8
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_27
+		dataType: string
+		lineageTag: 2214f4d5-3e13-43bb-a38c-9c736a425fb3
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_27
+		dataType: string
+		lineageTag: 12b1f814-b2d7-4bd6-8a33-ad7c9a69f283
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_27
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_28
+		dataType: string
+		lineageTag: 28815cd3-66f4-47d3-9b30-ddd61ae7cd2f
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_28
+		dataType: string
+		lineageTag: 6db7c719-da79-4bb6-ad4a-c7557db62e56
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_28
+		dataType: string
+		lineageTag: 0e7c1ac2-7c46-4c9e-95da-b50b25d8ae17
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_28
+		dataType: string
+		lineageTag: 6fc8af26-7c4c-4e39-a735-d0688acac547
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_28
+		dataType: string
+		lineageTag: 01bbd9f5-38b0-4d8b-9074-4297afc36444
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_28
+		dataType: string
+		lineageTag: 579202d0-9804-4798-8804-4b3b705fd164
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_28
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_29
+		dataType: string
+		lineageTag: 67cf3db0-0c30-4de1-ac62-cea8b0180a7b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_29
+		dataType: string
+		lineageTag: d6dc6f75-64fb-48bf-a424-01627565b635
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_29
+		dataType: string
+		lineageTag: f6581761-41fe-440e-9c72-80425849f2e6
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_29
+		dataType: string
+		lineageTag: ead22fc3-a849-4359-8037-37092eb7cb46
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_29
+		dataType: string
+		lineageTag: 828c8a12-0f71-4219-9f85-56eace11a11b
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_29
+		dataType: string
+		lineageTag: 658cd95a-82dd-4ec0-b230-0b03320dc63e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_text_30
+		dataType: string
+		lineageTag: 6aa6566e-54bf-4cf6-b70a-e021aa991b7e
+		summarizeBy: none
+		sourceColumn: benutzerfeld_text_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_janein_30
+		dataType: string
+		lineageTag: f41cba95-e6bf-4720-a4c1-b9d663531bd5
+		summarizeBy: none
+		sourceColumn: benutzerfeld_janein_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_betrag_30
+		dataType: string
+		lineageTag: 7f81aeed-b377-485d-ab04-331ace4374e9
+		summarizeBy: none
+		sourceColumn: benutzerfeld_betrag_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zahl_30
+		dataType: string
+		lineageTag: ebf8f2fe-9dd9-464e-855f-288ba7419f31
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zahl_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_datum_30
+		dataType: string
+		lineageTag: 3d1a51f2-a8fa-475c-8184-3167b0d866e8
+		summarizeBy: none
+		sourceColumn: benutzerfeld_datum_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzerfeld_zeitpunkt_30
+		dataType: string
+		lineageTag: da0fcc35-e57b-4525-933d-022617281d16
+		summarizeBy: none
+		sourceColumn: benutzerfeld_zeitpunkt_30
+
+		annotation SummarizationSetBy = Automatic
+
+	column benutzer_id
+		dataType: string
+		lineageTag: 5125283b-08cb-4c47-9247-f3aaff60f129
+		summarizeBy: none
+		sourceColumn: benutzer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column namensergänzung
+		dataType: string
+		lineageTag: 905ddd9f-081f-4f27-b178-f91c643a6ac3
+		summarizeBy: none
+		sourceColumn: namensergänzung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_1
+		dataType: string
+		lineageTag: 692e34eb-9837-4f3b-891e-0e1524c48a93
+		summarizeBy: none
+		sourceColumn: e_mail_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_2
+		dataType: string
+		lineageTag: 278aa5f9-804a-4314-928a-6133c37a7329
+		summarizeBy: none
+		sourceColumn: e_mail_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_3
+		dataType: string
+		lineageTag: 66a17f68-8325-4246-9284-7e702ebaeedc
+		summarizeBy: none
+		sourceColumn: e_mail_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_4
+		dataType: string
+		lineageTag: c4b9dbf5-31f5-4391-a0dc-202857d896e1
+		summarizeBy: none
+		sourceColumn: e_mail_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_5
+		dataType: string
+		lineageTag: c659bb4d-23ea-4858-b507-8d20e11243e3
+		summarizeBy: none
+		sourceColumn: e_mail_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_6
+		dataType: string
+		lineageTag: a73ced28-1e6d-4e0d-b20a-08c776e4e123
+		summarizeBy: none
+		sourceColumn: e_mail_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_mahnung
+		dataType: string
+		lineageTag: 13c233e0-a2fa-4c04-8e70-8aa6ee53a9d0
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_mahnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_zahlungsavise
+		dataType: string
+		lineageTag: e4cde913-dcc8-4990-942a-2ce6e054835f
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_zahlungsavise
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_saldenbestätigung
+		dataType: string
+		lineageTag: f29d3f8a-8265-4b52-9c1d-e030b6b314ec
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_saldenbestätigung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_angebote_und_aufträge
+		dataType: string
+		lineageTag: ce7b86b5-2bf7-44aa-994b-3c4fbdf3e028
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_angebote_und_aufträge
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_rechnungengutschriften
+		dataType: string
+		lineageTag: 44d99264-bcc2-4cb3-b69a-dc1e7e572962
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_rechnungengutschriften
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_lieferscheine
+		dataType: string
+		lineageTag: 7eb22c71-243c-40b3-8bb6-641e64224867
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_lieferscheine
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_geschäftlich
+		dataType: string
+		lineageTag: bb3dd2fa-69d9-46d3-beb9-30f2584d8ed5
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_geschäftlich
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_geschäftlich_2
+		dataType: string
+		lineageTag: 933efdfd-128f-4b0a-b9bc-19c00a6f573b
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_geschäftlich_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_assistent
+		dataType: string
+		lineageTag: f3224f82-08f6-4922-9499-948a93342f5b
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_assistent
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_privat
+		dataType: string
+		lineageTag: a53570de-f3ae-4f43-9d8b-6f44383eecda
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_privat
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_privat_2
+		dataType: string
+		lineageTag: b1bc9c01-3eb4-4ac3-9952-d456f28c7899
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_privat_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_weitere
+		dataType: string
+		lineageTag: 8837e750-543e-4836-9119-1ed8768fee7b
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_weitere
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_mahnung
+		dataType: string
+		lineageTag: 2087857a-a0cc-4808-9f21-ccff113c2b92
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_mahnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_zahlungsavise
+		dataType: string
+		lineageTag: 019023a5-fd80-4729-9a55-f0605ebc3a45
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_zahlungsavise
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_saldenbestätigung
+		dataType: string
+		lineageTag: 43f3545f-5296-40c2-b7a0-0d572d2b24b3
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_saldenbestätigung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_angebote_und_aufträge
+		dataType: string
+		lineageTag: d83f33d2-fb9e-47fa-b737-5d85eebe8375
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_angebote_und_aufträge
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_rechnungengutschriften
+		dataType: string
+		lineageTag: 28773c73-72bc-4d51-b5dc-d5e71a99d55a
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_rechnungengutschriften
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_cc_lieferscheine
+		dataType: string
+		lineageTag: 0e41696a-2b88-4ae4-a882-da767ef2cb68
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_cc_lieferscheine
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_geschäftlich
+		dataType: string
+		lineageTag: 5397d7ca-3793-4ae7-bbe9-0dba51f53376
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_geschäftlich
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_geschäftlich_2
+		dataType: string
+		lineageTag: 814ce63c-1f93-477b-9a8f-3ee1f091da5c
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_geschäftlich_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_assistent
+		dataType: string
+		lineageTag: 4efc0a71-e4e2-4d80-b5a1-4115aa15b9a2
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_assistent
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_privat
+		dataType: string
+		lineageTag: f351ca01-c871-4dab-a47f-4e1c30572a59
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_privat
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_privat_2
+		dataType: string
+		lineageTag: a9b59cb7-2bb1-441b-9a2b-329de0170534
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_privat_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_weitere
+		dataType: string
+		lineageTag: 4c177aff-92e1-425a-bd35-d32279a2847a
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_weitere
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_mahnung
+		dataType: string
+		lineageTag: 4a3ec4c5-0c66-4efe-80c1-407f793dd9ae
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_mahnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_zahlungsavise
+		dataType: string
+		lineageTag: 5da4e370-c4b0-48a2-abc9-7598b89d6bcb
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_zahlungsavise
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_saldenbestätigung
+		dataType: string
+		lineageTag: afe11e3e-6082-41c0-a4eb-c4b7914d8b94
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_saldenbestätigung
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_angebote_und_aufträge
+		dataType: string
+		lineageTag: 2ad6323a-b2c5-4b27-ac63-43cfbc7df48b
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_angebote_und_aufträge
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_rechnungengutschriften
+		dataType: string
+		lineageTag: a47ad3f2-6abd-4b27-878c-6dab37d539d4
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_rechnungengutschriften
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_adresse_bcc_lieferscheine
+		dataType: string
+		lineageTag: c65f1bb6-bf5b-47f9-b0cb-06dc9b57d315
+		summarizeBy: none
+		sourceColumn: e_mail_adresse_bcc_lieferscheine
+
+		annotation SummarizationSetBy = Automatic
+
+	column umsatzsteuer_id
+		dataType: string
+		lineageTag: e571c092-a5b8-4e95-98c9-a92beb72b118
+		summarizeBy: none
+		sourceColumn: umsatzsteuer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column _aufträge
+		dataType: string
+		lineageTag: 404b9c30-7594-4902-87ed-29c8ff773983
+		summarizeBy: none
+		sourceColumn: _aufträge
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_1
+		dataType: string
+		lineageTag: d58a81e3-3bf5-4684-9679-897eddfe453b
+		summarizeBy: none
+		sourceColumn: straße_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_2
+		dataType: string
+		lineageTag: 99d2b2b6-d3ae-4ad1-9f39-306e7bc7bd4b
+		summarizeBy: none
+		sourceColumn: straße_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_3
+		dataType: string
+		lineageTag: a3bfdb11-1b9e-427f-9800-cb09956aa881
+		summarizeBy: none
+		sourceColumn: straße_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_4
+		dataType: string
+		lineageTag: 5b12f10d-e270-4323-acdd-da7398b6ae5a
+		summarizeBy: none
+		sourceColumn: straße_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_5
+		dataType: string
+		lineageTag: da1e800b-31c4-4e8a-ac52-a139df48c575
+		summarizeBy: none
+		sourceColumn: straße_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column straße_6
+		dataType: string
+		lineageTag: 99b03b67-a44e-4d05-835d-2ddea77d5d5a
+		summarizeBy: none
+		sourceColumn: straße_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column änderungsdatum
+		dataType: string
+		lineageTag: 9d9c2c38-c23c-45d6-8a25-cada5110e68b
+		summarizeBy: none
+		sourceColumn: änderungsdatum
+
+		annotation SummarizationSetBy = Automatic
+
+	column standardwährung
+		dataType: string
+		lineageTag: d2d82c17-af33-4242-9bdd-b262163cb361
+		summarizeBy: none
+		sourceColumn: standardwährung
+
+		annotation SummarizationSetBy = Automatic
+
+	column abc_kunde
+		dataType: string
+		lineageTag: 15b964c3-ce01-4e4c-9490-3ef1ddbb085a
+		summarizeBy: none
+		sourceColumn: abc_kunde
+
+		annotation SummarizationSetBy = Automatic
+
+	column ust_idnr
+		dataType: string
+		lineageTag: 52df538e-db1f-4c85-bfeb-a90b572766ca
+		summarizeBy: none
+		sourceColumn: ust_idnr
+
+		annotation SummarizationSetBy = Automatic
+
+	column ust_idnr_gültig
+		dataType: string
+		lineageTag: b78de6b3-d28a-427e-a0dd-bdf170492d79
+		summarizeBy: none
+		sourceColumn: ust_idnr_gültig
+
+		annotation SummarizationSetBy = Automatic
+
+	column ust_idnr_überprüft_am
+		dataType: string
+		lineageTag: d63c1718-4579-46b1-91ee-3a9a7a712871
+		summarizeBy: none
+		sourceColumn: ust_idnr_überprüft_am
+
+		annotation SummarizationSetBy = Automatic
+
+	column währung
+		dataType: string
+		lineageTag: 0521df09-2a7d-4d19-834d-72f6b969345d
+		summarizeBy: none
+		sourceColumn: währung
+
+		annotation SummarizationSetBy = Automatic
+
+	column gemeinnützigkeit
+		dataType: string
+		lineageTag: c8b36f99-73b6-49a1-835b-e689ed02526d
+		summarizeBy: none
+		sourceColumn: gemeinnützigkeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column art_der_gemeinnützigkeit
+		dataType: string
+		lineageTag: 88031094-5165-4ed3-8caa-e5170a3bdb31
+		summarizeBy: none
+		sourceColumn: art_der_gemeinnützigkeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column förderzweck
+		dataType: string
+		lineageTag: d1f5849f-a97d-4e45-85be-3a34e23574dc
+		summarizeBy: none
+		sourceColumn: förderzweck
+
+		annotation SummarizationSetBy = Automatic
+
+	column leitweg_id
+		dataType: string
+		lineageTag: 6b4a8ee2-1aa8-48ff-8797-0adc73e113d6
+		summarizeBy: none
+		sourceColumn: leitweg_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nationalität
+		dataType: string
+		lineageTag: a32a3fa0-6777-40f0-8b52-b2d4cc8dc1e1
+		summarizeBy: none
+		sourceColumn: nationalität
+
+		annotation SummarizationSetBy = Automatic
+
+	column käuferloyalität
+		dataType: string
+		lineageTag: 493ccf52-ed53-41ea-8b0d-6f5571e08c5b
+		summarizeBy: none
+		sourceColumn: käuferloyalität
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertriebspriorität
+		dataType: string
+		lineageTag: d0a19de3-ff67-41e6-b086-6d35db5ae210
+		summarizeBy: none
+		sourceColumn: vertriebspriorität
+
+		annotation SummarizationSetBy = Automatic
+
+	column folgeaktivität_vertrieb
+		dataType: string
+		lineageTag: 3ecc5475-5d1a-42ff-b5ec-2616545b1441
+		summarizeBy: none
+		sourceColumn: folgeaktivität_vertrieb
+
+		annotation SummarizationSetBy = Automatic
+
+	column auslieferpriorität
+		dataType: string
+		lineageTag: 044ec0c9-5dab-4ee8-a844-7cc1b753025f
+		summarizeBy: none
+		sourceColumn: auslieferpriorität
+
+		annotation SummarizationSetBy = Automatic
+
+	column incoterms_ort
+		dataType: string
+		lineageTag: 591dfce1-2b5f-49d3-9d6f-935424cb18d8
+		summarizeBy: none
+		sourceColumn: incoterms_ort
+
+		annotation SummarizationSetBy = Automatic
+
+	column sanktionsstatus_geändert_von
+		dataType: string
+		lineageTag: f466b353-074e-4e40-b44d-145931df04e5
+		summarizeBy: none
+		sourceColumn: sanktionsstatus_geändert_von
+
+		annotation SummarizationSetBy = Automatic
+
+	column sanktionsstatus_geändert_am
+		dataType: string
+		lineageTag: 46518895-57c6-4c34-982c-e9554aabd19b
+		summarizeBy: none
+		sourceColumn: sanktionsstatus_geändert_am
+
+		annotation SummarizationSetBy = Automatic
+
+	column schlagwörter
+		dataType: string
+		lineageTag: 18c82800-4977-4ec7-9c5c-0e92eaadaf24
+		summarizeBy: none
+		sourceColumn: schlagwörter
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_1___organisation
+		dataType: string
+		lineageTag: d971d219-127b-4323-9fc7-203deb2f4a9f
+		summarizeBy: none
+		sourceColumn: ehrenamt_1___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_1___position
+		dataType: string
+		lineageTag: e492ffcc-123b-4f4c-960b-47e277a5178f
+		summarizeBy: none
+		sourceColumn: ehrenamt_1___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_2___organisation
+		dataType: string
+		lineageTag: ee054e67-a2a9-4d38-9514-58a497340e12
+		summarizeBy: none
+		sourceColumn: ehrenamt_2___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_2___position
+		dataType: string
+		lineageTag: a1f9f50b-3bbe-41ae-8045-b62f878ad1be
+		summarizeBy: none
+		sourceColumn: ehrenamt_2___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_3___organisation
+		dataType: string
+		lineageTag: 42faf444-6cc0-4d61-ab68-6986b5018f18
+		summarizeBy: none
+		sourceColumn: ehrenamt_3___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_3___position
+		dataType: string
+		lineageTag: 5925ffec-dc2f-4f42-9389-2b59ce1e75c5
+		summarizeBy: none
+		sourceColumn: ehrenamt_3___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_4___organisation
+		dataType: string
+		lineageTag: d62b9a95-3277-4d81-a699-022adc11b95e
+		summarizeBy: none
+		sourceColumn: ehrenamt_4___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_4___position
+		dataType: string
+		lineageTag: f38e782f-069e-49ce-b192-4c42f5013da8
+		summarizeBy: none
+		sourceColumn: ehrenamt_4___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_5___organisation
+		dataType: string
+		lineageTag: b016bd4f-8630-488b-9c34-61c060717927
+		summarizeBy: none
+		sourceColumn: ehrenamt_5___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_5___position
+		dataType: string
+		lineageTag: ed25333f-62c3-4218-a42a-09e34fba10d1
+		summarizeBy: none
+		sourceColumn: ehrenamt_5___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_6___organisation
+		dataType: string
+		lineageTag: 86a8b3da-8903-4c8f-98bb-9a7b930f77c1
+		summarizeBy: none
+		sourceColumn: ehrenamt_6___organisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ehrenamt_6___position
+		dataType: string
+		lineageTag: bb578e62-4ffe-4143-99b0-68640283424f
+		summarizeBy: none
+		sourceColumn: ehrenamt_6___position
+
+		annotation SummarizationSetBy = Automatic
+
+	column besondere_fähigkeiten
+		dataType: string
+		lineageTag: 8704f89f-39b3-4986-bff1-3acb88136c74
+		summarizeBy: none
+		sourceColumn: besondere_fähigkeiten
+
+		annotation SummarizationSetBy = Automatic
+
+	column art_der_beschäftigung
+		dataType: string
+		lineageTag: 4af30fae-ee39-413c-9008-626f2b79fe39
+		summarizeBy: none
+		sourceColumn: art_der_beschäftigung
+
+		annotation SummarizationSetBy = Automatic
+
+	column tatigkeitsschlüssel
+		dataType: string
+		lineageTag: 282c5442-aaae-4fe2-9b53-725767cb61f4
+		summarizeBy: none
+		sourceColumn: tatigkeitsschlüssel
+
+		annotation SummarizationSetBy = Automatic
+
+	column kv_nr
+		dataType: string
+		lineageTag: 09537c24-963c-42d4-bb5f-dc370393cd82
+		summarizeBy: none
+		sourceColumn: kv_nr
+
+		annotation SummarizationSetBy = Automatic
+
+	column pv_nr
+		dataType: string
+		lineageTag: e1de31f2-8daf-4d65-a6ed-fd2a10d7bf98
+		summarizeBy: none
+		sourceColumn: pv_nr
+
+		annotation SummarizationSetBy = Automatic
+
+	column art_der_vergütung
+		dataType: string
+		lineageTag: afec64df-5ca4-4834-a595-3d37cd5b4f68
+		summarizeBy: none
+		sourceColumn: art_der_vergütung
+
+		annotation SummarizationSetBy = Automatic
+
+	column monatliche_festvergütung
+		dataType: string
+		lineageTag: b53d9bae-c916-4c42-a43d-7b70536e9940
+		summarizeBy: none
+		sourceColumn: monatliche_festvergütung
+
+		annotation SummarizationSetBy = Automatic
+
+	column monatliche_variable_vergütung
+		dataType: string
+		lineageTag: aac9cee5-4367-48a3-a0e2-b1f0018392fd
+		summarizeBy: none
+		sourceColumn: monatliche_variable_vergütung
+
+		annotation SummarizationSetBy = Automatic
+
+	column überstundenzuschlag_in_
+		dataType: string
+		lineageTag: 952a3de6-abc5-47ac-b02e-ab1b40f337d0
+		summarizeBy: none
+		sourceColumn: überstundenzuschlag_in_
+
+		annotation SummarizationSetBy = Automatic
+
+	column e_mail_kampagne
+		dataType: string
+		lineageTag: f62aa9f9-dce4-4055-ba59-92ae17ddd474
+		summarizeBy: none
+		sourceColumn: e_mail_kampagne
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_transfer___interessent
+		dataType: string
+		lineageTag: c4fed098-f437-451c-8b0c-baf37ee0532f
+		summarizeBy: none
+		sourceColumn: lead_transfer___interessent
+
+		annotation SummarizationSetBy = Automatic
+
+	column informationen_für_kundenbetreuer
+		dataType: string
+		lineageTag: ffa36f05-1b0b-4582-9593-c4495d030a84
+		summarizeBy: none
+		sourceColumn: informationen_für_kundenbetreuer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kunde_zuletzt_vom_kundenbetreuer_geöffnet
+		dataType: string
+		lineageTag: 39d635e5-e897-4e48-811e-268493426b05
+		summarizeBy: none
+		sourceColumn: kunde_zuletzt_vom_kundenbetreuer_geöffnet
+
+		annotation SummarizationSetBy = Automatic
+
+	column abzulösendes_bestandsprodukt_id
+		dataType: string
+		lineageTag: 4a4cc7a3-981f-40e8-be51-a01490c739d3
+		summarizeBy: none
+		sourceColumn: abzulösendes_bestandsprodukt_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column abzulösendes_bestandsprodukt
+		dataType: string
+		lineageTag: 1b1e7189-4b8f-467a-8890-4814b24c9bc2
+		summarizeBy: none
+		sourceColumn: abzulösendes_bestandsprodukt
+
+		annotation SummarizationSetBy = Automatic
+
+	column vertragsbindung_laufzeit
+		dataType: string
+		lineageTag: d4b06845-e6f9-4814-af2a-7bd80572387e
+		summarizeBy: none
+		sourceColumn: vertragsbindung_laufzeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_für_partner_id
+		dataType: string
+		lineageTag: 5b9fe8b8-9965-41b4-939d-911467cb20da
+		summarizeBy: none
+		sourceColumn: ansprechpartner_für_partner_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ansprechpartner_für_g_partner
+		dataType: string
+		lineageTag: 97a0ddae-c950-42ec-be58-3cd5c2c762b7
+		summarizeBy: none
+		sourceColumn: ansprechpartner_für_g_partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column abc_partner
+		dataType: string
+		lineageTag: 8fd32c0e-5634-4127-be24-eaf69ac36ed4
+		summarizeBy: none
+		sourceColumn: abc_partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitszeit_gültig_von
+		dataType: string
+		lineageTag: 2c98eaac-a110-4cc4-83bc-3b54edcbfb3f
+		summarizeBy: none
+		sourceColumn: arbeitszeit_gültig_von
+
+		annotation SummarizationSetBy = Automatic
+
+	column arbeitszeit_gültig_bis
+		dataType: string
+		lineageTag: 4bc68b94-b5c9-4052-bb15-3e59ce7db09a
+		summarizeBy: none
+		sourceColumn: arbeitszeit_gültig_bis
+
+		annotation SummarizationSetBy = Automatic
+
+	column einheit_arbeitszeit
+		dataType: string
+		lineageTag: 60df7e51-254e-496f-9767-c6457dbc2381
+		summarizeBy: none
+		sourceColumn: einheit_arbeitszeit
+
+		annotation SummarizationSetBy = Automatic
+
+	column betriebsstättennummer
+		dataType: string
+		lineageTag: 6f6d7d4e-5dd4-43f4-bb14-8d3437d53236
+		summarizeBy: none
+		sourceColumn: betriebsstättennummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column erstkontakt_info
+		dataType: string
+		lineageTag: 8db22c39-a544-42fb-a666-1ceb4544e465
+		summarizeBy: none
+		sourceColumn: erstkontakt_info
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kontakte = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_kontakte = Source{[Schema="dbo",Item="kontakte"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_kontakte,{{"master_id", type text}, {"ist_firmenkontakt", type text}, {"vorname", type text}, {"namegesellschaft", type text}, {"gesellschaft", type text}, {"aus_benutzerkontakt", type text}, {"benutzer_id", type text}, {"sphereimplementation", type text}, {"spherebilling", type text}, {"sphereresources", type text}, {"sphereplanning", type text}, {"spheredisposition", type text}, {"sphereinput", type text}, {"interessent", type text}, {"lead", type text}, {"kunde", type text}, {"partner", type text}, {"arbeitnehmer", type text}, {"anrede", type text}, {"namensergänzung", type text}, {"telefon_1", type text}, {"telefon_2", type text}, {"telefon_3", type text}, {"telefon_4", type text}, {"telefon_5", type text}, {"telefon_6", type text}, {"mobiltelefon_1", type text}, {"mobiltelefon_2", type text}, {"mobiltelefon_3", type text}, {"mobiltelefon_4", type text}, {"mobiltelefon_5", type text}, {"mobiltelefon_6", type text}, {"e_mail_1", type text}, {"e_mail_2", type text}, {"e_mail_3", type text}, {"e_mail_4", type text}, {"e_mail_5", type text}, {"e_mail_6", type text}, {"e_mail_adresse_mahnung", type text}, {"e_mail_adresse_zahlungsavise", type text}, {"e_mail_adresse_saldenbestätigung", type text}, {"e_mail_adresse_angebote_und_aufträge", type text}, {"e_mail_adresse_rechnungengutschriften", type text}, {"e_mail_adresse_lieferscheine", type text}, {"email13", type text}, {"e_mail_adresse_cc_geschäftlich", type text}, {"e_mail_adresse_cc_geschäftlich_2", type text}, {"e_mail_adresse_cc_assistent", type text}, {"e_mail_adresse_cc_privat", type text}, {"e_mail_adresse_cc_privat_2", type text}, {"e_mail_adresse_cc_weitere", type text}, {"e_mail_adresse_cc_mahnung", type text}, {"e_mail_adresse_cc_zahlungsavise", type text}, {"e_mail_adresse_cc_saldenbestätigung", type text}, {"e_mail_adresse_cc_angebote_und_aufträge", type text}, {"e_mail_adresse_cc_rechnungengutschriften", type text}, {"e_mail_adresse_cc_lieferscheine", type text}, {"emailcc13", type text}, {"e_mail_adresse_bcc_geschäftlich", type text}, {"e_mail_adresse_bcc_geschäftlich_2", type text}, {"e_mail_adresse_bcc_assistent", type text}, {"e_mail_adresse_bcc_privat", type text}, {"e_mail_adresse_bcc_privat_2", type text}, {"e_mail_adresse_bcc_weitere", type text}, {"e_mail_adresse_bcc_mahnung", type text}, {"e_mail_adresse_bcc_zahlungsavise", type text}, {"e_mail_adresse_bcc_saldenbestätigung", type text}, {"e_mail_adresse_bcc_angebote_und_aufträge", type text}, {"e_mail_adresse_bcc_rechnungengutschriften", type text}, {"e_mail_adresse_bcc_lieferscheine", type text}, {"emailbcc13", type text}, {"webseite", type text}, {"fax_1", type text}, {"fax_2", type text}, {"fax_3", type text}, {"fax_4", type text}, {"fax_5", type text}, {"fax_6", type text}, {"kundennummer", type text}, {"umsatzsteuer_id", type text}, {"steuernummer", type text}, {"skipedlohnprocessing", type text}, {"gesetzlicher_vertreter", type text}, {"gesetzlicher_vertreter_2", type text}, {"gesetzlicher_vertreter_3", type text}, {"gesetzlicher_vertreter_4", type text}, {"gesetzlicher_vertreter_5", type text}, {"gesetzlicher_vertreter_6", type text}, {"gesetzlicher_vertreter_7", type text}, {"gesetzlicher_vertreter_8", type text}, {"ansprechpartner_1", type text}, {"ansprechpartner_2", type text}, {"ansprechpartner_3", type text}, {"ansprechpartner_4", type text}, {"ansprechpartner_5", type text}, {"ansprechpartner_6", type text}, {"ansprechpartner_7", type text}, {"ansprechpartner_8", type text}, {"ansprechpartner_9", type text}, {"ansprechpartner_10", type text}, {"ansprechpartner_11", type text}, {"ansprechpartner_12", type text}, {"ansprechpartner_13", type text}, {"ansprechpartner_14", type text}, {"titel", type text}, {"klassifikation", type text}, {"quelle", type text}, {"position", type text}, {"stelle", type text}, {"geburtsdatum", type text}, {"abteilung", type text}, {"notiz", type text}, {"position1", type text}, {"preisliste_verkauf_mid", type text}, {"preisliste_verkauf", type text}, {"_potenziale_offen", type text}, {"_angebote_offen", type text}, {"_aufträge", type text}, {"_rechnungen", type text}, {"_gestellter_rechnungen", type text}, {"nachname_1", type text}, {"vorname_1", type text}, {"stadt_1", type text}, {"straße_1", type text}, {"postleitzahl_1", type text}, {"bundesland_1", type text}, {"land_1", type text}, {"zeitzone_1", type text}, {"zustellanweisung_co_1", type text}, {"nachname_2", type text}, {"vorname_2", type text}, {"straße_2", type text}, {"stadt_2", type text}, {"postleitzahl_2", type text}, {"bundesland_2", type text}, {"land_2", type text}, {"zeitzone_2", type text}, {"zustellanweisung_co_2", type text}, {"nachname_3", type text}, {"vorname_3", type text}, {"straße_3", type text}, {"stadt_3", type text}, {"postleitzahl_3", type text}, {"bundesland_3", type text}, {"land_3", type text}, {"zeitzone_3", type text}, {"zustellanweisung_co_3", type text}, {"nachname_4", type text}, {"vorname_4", type text}, {"straße_4", type text}, {"stadt_4", type text}, {"postleitzahl_4", type text}, {"bundesland_4", type text}, {"land_4", type text}, {"zeitzone_4", type text}, {"zustellanweisung_co_4", type text}, {"nachname_5", type text}, {"vorname_5", type text}, {"straße_5", type text}, {"stadt_5", type text}, {"postleitzahl_5", type text}, {"bundesland_5", type text}, {"land_5", type text}, {"zeitzone_5", type text}, {"zustellanweisung_co_5", type text}, {"nachname_6", type text}, {"vorname_6", type text}, {"straße_6", type text}, {"stadt_6", type text}, {"postleitzahl_6", type text}, {"bundesland_6", type text}, {"land_6", type text}, {"zeitzone_6", type text}, {"zustellanweisung_co_6", type text}, {"aktiv", type text}, {"kontaktinhaber", type text}, {"arbeitgeber_id", type text}, {"arbeitgeber", type text}, {"ansprechpartner_veraltet", type text}, {"zahlungsart", type text}, {"erstellungsdatum", type text}, {"änderungsdatum", type text}, {"customerzoneid", type text}, {"customerzonenumber", type text}, {"vendorzoneid", type text}, {"vendorzonenumber", type text}, {"branche", type text}, {"mitarbeiteranzahl", type text}, {"umsatz", type text}, {"employeenumber", type text}, {"invoicetype", type text}, {"rechnungsformat", type text}, {"rechtsform_der_organisation", type text}, {"art_der_organisation", type text}, {"standardwährung", type text}, {"mitarbeiteranzahl_circa", type text}, {"jahresumsatz_euro_circa", type text}, {"marktanteil__circa", type text}, {"geschlecht", type text}, {"geburtsname", type text}, {"familienstatus", type text}, {"anzahl_kinder", type text}, {"beruf", type text}, {"arbeitgeber1", type text}, {"dienststelle", type text}, {"ansprechpartner_veraltet1", type text}, {"hauspostadresse", type text}, {"abc_kunde", type text}, {"kundengruppe", type text}, {"kundenkurzstatus", type text}, {"sprache", type text}, {"imei", type text}, {"bevorzugte_kontaktart", type text}, {"im_adresse", type text}, {"skype_id", type text}, {"xing_link", type text}, {"linkedin_link", type text}, {"link_map", type text}, {"bundesanzeiger", type text}, {"handelsregister", type text}, {"handelsregisternummer", type text}, {"unternehmensgegenstand", type text}, {"betriebsnummer", type text}, {"berufsgenossenschaft", type text}, {"ebayid", type text}, {"kundenname_ebay", type text}, {"finanzamt", type text}, {"steuernummer1", type text}, {"ust_idnr", type text}, {"ust_idnr_gültig", type text}, {"ust_idnr_überprüft_am", type text}, {"währung", type text}, {"gemeinnützigkeit", type text}, {"art_der_gemeinnützigkeit", type text}, {"förderzweck", type text}, {"leitweg_id", type text}, {"vip", type text}, {"kurzname", type text}, {"nationalität", type text}, {"zielgruppe", type text}, {"bildungsstand", type text}, {"einkommensklasse", type text}, {"einstellung", type text}, {"arbeitstyp", type text}, {"kaufverhalten", type text}, {"lebensstil", type text}, {"risikoeinstellung", type text}, {"marketingbeauftragter", type text}, {"marketingbeauftragter1", type text}, {"kundenbetreuer_id", type text}, {"kundenbetreuer", type text}, {"kampagnenbeauftragter_id", type text}, {"kampagnenbeauftragter", type text}, {"käuferloyalität", type text}, {"vertriebsquelle", type text}, {"vertriebsweg", type text}, {"vertriebsbeauftragter", type text}, {"vertriebsorganisation", type text}, {"nielsenbezirke", type text}, {"vertriebsgebiet", type text}, {"vertriebsrisiko", type text}, {"vertriebspriorität", type text}, {"nachfrageverhalten", type text}, {"vertriebsphase", type text}, {"vertriebsstatus", type text}, {"folgeaktivität_vertrieb", type text}, {"kundengruppe1", type text}, {"vertragsunterzeichner", type text}, {"vertriebskampagne", type text}, {"salesreminderfrom", type text}, {"salesreminderto", type text}, {"salestemplate", type text}, {"salesdescription", type text}, {"debitorenbetreuer_id", type text}, {"debitorenbetreuer", type text}, {"kreditorpersonid", type text}, {"kreditorpersondisplay", type text}, {"auslieferpriorität", type text}, {"komplettlieferung", type text}, {"incoterms", type text}, {"incoterms_ort", type text}, {"sanktionsstatus", type text}, {"sanctionuid", type text}, {"sanktionsstatus_geändert_von", type text}, {"sanktionsstatus_geändert_am", type text}, {"rolle", type text}, {"schlagwörter", type text}, {"id_vorsystem", type text}, {"versandart_faktura", type text}, {"versandart_faktura_benutzerdefiniert", type text}, {"preferredpurchaseordersendmethod", type text}, {"ehrenamt_1___organisation", type text}, {"ehrenamt_1___position", type text}, {"ehrenamt_1", type text}, {"ehrenamt_2___organisation", type text}, {"ehrenamt_2___position", type text}, {"ehrenamt_2", type text}, {"ehrenamt_3___organisation", type text}, {"ehrenamt_3___position", type text}, {"ehrenamt_3", type text}, {"ehrenamt_4___organisation", type text}, {"ehrenamt_4___position", type text}, {"ehrenamt_4", type text}, {"ehrenamt_5___organisation", type text}, {"ehrenamt_5___position", type text}, {"ehrenamt_5", type text}, {"ehrenamt_6___organisation", type text}, {"ehrenamt_6___position", type text}, {"ehrenamt_6", type text}, {"kenntnisse", type text}, {"sprachen", type text}, {"besondere_fähigkeiten", type text}, {"zusatzqualifikationen", type text}, {"sonstiges", type text}, {"art_der_beschäftigung", type text}, {"beginn", type text}, {"ende", type text}, {"jahresurlaubstage", type text}, {"einstufung_gf_zone_bg", type text}, {"tatigkeitsschlüssel", type text}, {"krankenversicherung", type text}, {"krankenkasse", type text}, {"kv_nr", type text}, {"pflegekasse", type text}, {"pv_nr", type text}, {"rentenversicherungsnummer", type text}, {"art_der_vergütung", type text}, {"monatliche_festvergütung", type text}, {"monatliche_variable_vergütung", type text}, {"monatliche_vorauszahlung", type text}, {"stundenlohn", type text}, {"überstundenzuschlag_in_", type text}, {"wochenarbeitszeit", type text}, {"steuerberaterkammer", type text}, {"steuerberaternummer", type text}, {"crefonummer", type text}, {"creditreform_abgerufen_am", type text}, {"creditreform_abgerufen_von", type text}, {"letzte_kampagne", type text}, {"e_mail_kampagne", type text}, {"debitor_zahlungsart", type text}, {"kreditor_zahlungsart", type text}, {"lead_status_id", type text}, {"leadstatus", type text}, {"vertriebsstatus_id", type text}, {"vertriebsstatus1", type text}, {"kundenstatus_id", type text}, {"statuscustomerdisplay", type text}, {"leadstatus_1", type text}, {"lead_klassifikation", type text}, {"lead_identifizierung", type text}, {"vertriebsinformationen", type text}, {"lead_qualifizierung", type text}, {"lead_qualifizierung_punkte", type text}, {"lead_budget", type text}, {"lead_budget_betrag_in_euro", type text}, {"lead_budget_punkte", type text}, {"lead_authority", type text}, {"lead_authority_punkte", type text}, {"lead_need", type text}, {"lead_need_punkte", type text}, {"lead_time", type text}, {"lead_time_punkte", type text}, {"lead_transfer___interessent", type text}, {"lead_bant_summe", type text}, {"lead_kampagne", type text}, {"lead_newsletter", type text}, {"interestedclassification", type text}, {"interestednotice", type text}, {"interestedqualification", type text}, {"interestedqualificationrange", type text}, {"interestedbudget", type text}, {"interestedbudgetsum", type text}, {"interestedbudgetpoints", type text}, {"interestedauthority", type text}, {"interestedauthoritypoints", type text}, {"interestedneed", type text}, {"interestedneedpoints", type text}, {"interestedtime", type text}, {"interestedtimepoints", type text}, {"interestedtransfer", type text}, {"interestedsumpoints", type text}, {"informationen_vom_vertrieb", type text}, {"informationen_für_kundenbetreuer", type text}, {"zeiterfassung", type text}, {"debitor_kreditlimit", type text}, {"kreditor_kreditlimit", type text}, {"creditreform_kreditlimit", type text}, {"textsuche", type text}, {"aufruf_marketingbeauftragter", type text}, {"aufruf_vertriebsbeauftragter", type text}, {"kunde_zuletzt_vom_kundenbetreuer_geöffnet", type text}, {"zuletzt_von_kampagne_in_lead_konvertiert_id", type text}, {"zuletzt_von_kampagne_in_lead_konvertiert", type text}, {"abzulösendes_bestandsprodukt_id", type text}, {"abzulösendes_bestandsprodukt", type text}, {"vertragsbindung_laufzeit", type text}, {"verbleibendes_bestandsprodukt_id", type text}, {"verbleibendes_bestandsprodukt", type text}, {"wettbewerbsprodukte_id", type text}, {"wettbewerbsprodukte", type text}, {"vertriebspotential", type text}, {"vertriebsupgrade", type text}, {"betreuender_servicepartner_id", type text}, {"betreuender_servicepartner", type text}, {"competitivestrength", type text}, {"entscheidungsdatum", type text}, {"wiedervorlagedatum", type text}, {"facebook_link", type text}, {"ansprechpartner_für_partner_id", type text}, {"ansprechpartner_für_g_partner", type text}, {"art_der_partnerschaft", type text}, {"status_der_partnerschaft", type text}, {"partner_seit", type text}, {"partner_bis", type text}, {"abc_partner", type text}, {"erfahrungswerte", type text}, {"beschreibung_der_partnerschaft", type text}, {"kompetenz_beim_hag", type text}, {"vorgesetzter_beim_hag", type text}, {"vorgesetzter_beim_hag1", type text}, {"generelles_anzeigen_beim_hag", type text}, {"erfahrungswerte1", type text}, {"arbeitszeit_gültig_von", type text}, {"arbeitszeit_gültig_bis", type text}, {"arbeitszeit_kommentar", type text}, {"jahresurlaubstage1", type text}, {"einheit_der_arbeitszeit", type text}, {"einheit_arbeitszeit", type text}, {"interner_stundenverrechnungssatz", type text}, {"ignoreoutgoinginvoicerun", type text}, {"ignoriert_am", type text}, {"ignoreoutgoinginvoicerunuid", type text}, {"ignoriert_durch", type text}, {"centerdevicecollectionname", type text}, {"centerdevicecollectionid", type text}, {"managedcollectionname", type text}, {"managedcollectionid", type text}, {"gesellschaft_1", type text}, {"consolidationorganisationid", type text}, {"consolidationorganisationname", type text}, {"consolidationcontactid", type text}, {"consolidationcontactname", type text}, {"externalnumber1", type text}, {"externalnumber2", type text}, {"externalnumber3", type text}, {"ignorecorrection", type text}, {"praxisform", type text}, {"betriebsstättennummer", type text}, {"kontaktaufnahme_erlaubt", type text}, {"constructor", type text}, {"a1_locked", type text}, {"employeeaccounttype", type text}, {"benutzerfeld_text_1", type text}, {"weihnachtskarte_schicken", type text}, {"benutzerfeld_betrag_1", type text}, {"benutzerfeld_zahl_1", type text}, {"benutzerfeld_datum_1", type text}, {"benutzerfeld_zeitpunkt_1", type text}, {"erstkontakt_info", type text}, {"benutzerfeld_janein_2", type text}, {"benutzerfeld_betrag_2", type text}, {"benutzerfeld_zahl_2", type text}, {"benutzerfeld_datum_2", type text}, {"benutzerfeld_zeitpunkt_2", type text}, {"benutzerfeld_text_3", type text}, {"benutzerfeld_janein_3", type text}, {"benutzerfeld_betrag_3", type text}, {"benutzerfeld_zahl_3", type text}, {"benutzerfeld_datum_3", type text}, {"benutzerfeld_zeitpunkt_3", type text}, {"benutzerfeld_text_4", type text}, {"benutzerfeld_janein_4", type text}, {"benutzerfeld_betrag_4", type text}, {"benutzerfeld_zahl_4", type text}, {"benutzerfeld_datum_4", type text}, {"benutzerfeld_zeitpunkt_4", type text}, {"benutzerfeld_text_5", type text}, {"benutzerfeld_janein_5", type text}, {"benutzerfeld_betrag_5", type text}, {"benutzerfeld_zahl_5", type text}, {"benutzerfeld_datum_5", type text}, {"benutzerfeld_zeitpunkt_5", type text}, {"benutzerfeld_text_6", type text}, {"benutzerfeld_janein_6", type text}, {"benutzerfeld_betrag_6", type text}, {"benutzerfeld_zahl_6", type text}, {"benutzerfeld_datum_6", type text}, {"benutzerfeld_zeitpunkt_6", type text}, {"benutzerfeld_text_7", type text}, {"benutzerfeld_janein_7", type text}, {"benutzerfeld_betrag_7", type text}, {"benutzerfeld_zahl_7", type text}, {"benutzerfeld_datum_7", type text}, {"benutzerfeld_zeitpunkt_7", type text}, {"benutzerfeld_text_8", type text}, {"benutzerfeld_janein_8", type text}, {"benutzerfeld_betrag_8", type text}, {"benutzerfeld_zahl_8", type text}, {"benutzerfeld_datum_8", type text}, {"benutzerfeld_zeitpunkt_8", type text}, {"benutzerfeld_text_9", type text}, {"benutzerfeld_janein_9", type text}, {"benutzerfeld_betrag_9", type text}, {"benutzerfeld_zahl_9", type text}, {"benutzerfeld_datum_9", type text}, {"benutzerfeld_zeitpunkt_9", type text}, {"benutzerfeld_text_10", type text}, {"benutzerfeld_janein_10", type text}, {"benutzerfeld_betrag_10", type text}, {"benutzerfeld_zahl_10", type text}, {"benutzerfeld_datum_10", type text}, {"benutzerfeld_zeitpunkt_10", type text}, {"benutzerfeld_text_11", type text}, {"benutzerfeld_janein_11", type text}, {"benutzerfeld_betrag_11", type text}, {"benutzerfeld_zahl_11", type text}, {"benutzerfeld_datum_11", type text}, {"benutzerfeld_zeitpunkt_11", type text}, {"benutzerfeld_text_12", type text}, {"benutzerfeld_janein_12", type text}, {"benutzerfeld_betrag_12", type text}, {"benutzerfeld_zahl_12", type text}, {"benutzerfeld_datum_12", type text}, {"benutzerfeld_zeitpunkt_12", type text}, {"benutzerfeld_text_13", type text}, {"benutzerfeld_janein_13", type text}, {"benutzerfeld_betrag_13", type text}, {"benutzerfeld_zahl_13", type text}, {"benutzerfeld_datum_13", type text}, {"benutzerfeld_zeitpunkt_13", type text}, {"benutzerfeld_text_14", type text}, {"benutzerfeld_janein_14", type text}, {"benutzerfeld_betrag_14", type text}, {"benutzerfeld_zahl_14", type text}, {"benutzerfeld_datum_14", type text}, {"benutzerfeld_zeitpunkt_14", type text}, {"benutzerfeld_text_15", type text}, {"benutzerfeld_janein_15", type text}, {"benutzerfeld_betrag_15", type text}, {"benutzerfeld_zahl_15", type text}, {"benutzerfeld_datum_15", type text}, {"benutzerfeld_zeitpunkt_15", type text}, {"benutzerfeld_text_16", type text}, {"benutzerfeld_janein_16", type text}, {"benutzerfeld_betrag_16", type text}, {"benutzerfeld_zahl_16", type text}, {"benutzerfeld_datum_16", type text}, {"benutzerfeld_zeitpunkt_16", type text}, {"benutzerfeld_text_17", type text}, {"benutzerfeld_janein_17", type text}, {"benutzerfeld_betrag_17", type text}, {"benutzerfeld_zahl_17", type text}, {"benutzerfeld_datum_17", type text}, {"benutzerfeld_zeitpunkt_17", type text}, {"benutzerfeld_text_18", type text}, {"benutzerfeld_janein_18", type text}, {"benutzerfeld_betrag_18", type text}, {"benutzerfeld_zahl_18", type text}, {"benutzerfeld_datum_18", type text}, {"benutzerfeld_zeitpunkt_18", type text}, {"benutzerfeld_text_19", type text}, {"benutzerfeld_janein_19", type text}, {"benutzerfeld_betrag_19", type text}, {"benutzerfeld_zahl_19", type text}, {"benutzerfeld_datum_19", type text}, {"benutzerfeld_zeitpunkt_19", type text}, {"benutzerfeld_text_20", type text}, {"benutzerfeld_janein_20", type text}, {"benutzerfeld_betrag_20", type text}, {"benutzerfeld_zahl_20", type text}, {"benutzerfeld_datum_20", type text}, {"benutzerfeld_zeitpunkt_20", type text}, {"benutzerfeld_text_21", type text}, {"benutzerfeld_janein_21", type text}, {"benutzerfeld_betrag_21", type text}, {"benutzerfeld_zahl_21", type text}, {"benutzerfeld_datum_21", type text}, {"benutzerfeld_zeitpunkt_21", type text}, {"benutzerfeld_text_22", type text}, {"benutzerfeld_janein_22", type text}, {"benutzerfeld_betrag_22", type text}, {"benutzerfeld_zahl_22", type text}, {"benutzerfeld_datum_22", type text}, {"benutzerfeld_zeitpunkt_22", type text}, {"benutzerfeld_text_23", type text}, {"benutzerfeld_janein_23", type text}, {"benutzerfeld_betrag_23", type text}, {"benutzerfeld_zahl_23", type text}, {"benutzerfeld_datum_23", type text}, {"benutzerfeld_zeitpunkt_23", type text}, {"benutzerfeld_text_24", type text}, {"benutzerfeld_janein_24", type text}, {"benutzerfeld_betrag_24", type text}, {"benutzerfeld_zahl_24", type text}, {"benutzerfeld_datum_24", type text}, {"benutzerfeld_zeitpunkt_24", type text}, {"benutzerfeld_text_25", type text}, {"benutzerfeld_janein_25", type text}, {"benutzerfeld_betrag_25", type text}, {"benutzerfeld_zahl_25", type text}, {"benutzerfeld_datum_25", type text}, {"benutzerfeld_zeitpunkt_25", type text}, {"benutzerfeld_text_26", type text}, {"benutzerfeld_janein_26", type text}, {"benutzerfeld_betrag_26", type text}, {"benutzerfeld_zahl_26", type text}, {"benutzerfeld_datum_26", type text}, {"benutzerfeld_zeitpunkt_26", type text}, {"benutzerfeld_text_27", type text}, {"benutzerfeld_janein_27", type text}, {"benutzerfeld_betrag_27", type text}, {"benutzerfeld_zahl_27", type text}, {"benutzerfeld_datum_27", type text}, {"benutzerfeld_zeitpunkt_27", type text}, {"benutzerfeld_text_28", type text}, {"benutzerfeld_janein_28", type text}, {"benutzerfeld_betrag_28", type text}, {"benutzerfeld_zahl_28", type text}, {"benutzerfeld_datum_28", type text}, {"benutzerfeld_zeitpunkt_28", type text}, {"benutzerfeld_text_29", type text}, {"benutzerfeld_janein_29", type text}, {"benutzerfeld_betrag_29", type text}, {"benutzerfeld_zahl_29", type text}, {"benutzerfeld_datum_29", type text}, {"benutzerfeld_zeitpunkt_29", type text}, {"benutzerfeld_text_30", type text}, {"benutzerfeld_janein_30", type text}, {"benutzerfeld_betrag_30", type text}, {"benutzerfeld_zahl_30", type text}, {"benutzerfeld_datum_30", type text}, {"benutzerfeld_zeitpunkt_30", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

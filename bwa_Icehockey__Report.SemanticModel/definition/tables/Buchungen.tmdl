@@ -1,0 +1,206 @@
+table Buchungen
+	lineageTag: 92d96d3f-478e-4096-b395-0cff73868896
+
+	measure Buchungsbetrag = CALCULATE(sum(Buchungen[betrag]), Buchungen[Ist/Budget] = "Ist")
+		lineageTag: f69a3044-687e-434e-ba12-ee75843c833c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Buchungsbetrag_Bu = ```
+			CALCULATE([Buchungen Value], Buchungen[Ist/Budget] = "Budget")
+			
+			```
+		lineageTag: 8d05b4a6-2308-491e-affb-8d211cc9b76e
+
+	measure 'Buchungen Value' = sum(Buchungen[betrag])
+		lineageTag: cf5f71af-011e-406d-b2ba-7a65b81fd7d8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delta PY %' = ```
+			DIVIDE(([Buchungsbetrag]-[GuV PY]),[Buchungsbetrag],BLANK()) 
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 334b4d6d-648f-42cd-8c2b-d00dc96c2df3
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Delta Budget' = [Buchungsbetrag]-[Buchungsbetrag_Bu]
+		lineageTag: 6c4b0d29-0888-48b3-b6d8-d1ee544e4e1e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delta PY' = [Buchungsbetrag]-[GuV PY]
+		lineageTag: 9eea8533-e743-452d-84e0-54b0b131044f
+
+	measure 'GuV PY' = CALCULATE([Buchungsbetrag], SAMEPERIODLASTYEAR(DimDate[Date]))
+		lineageTag: 87546396-0289-4a1e-9125-b778bb805aa3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Selected Metric Value' = ```
+			
+			VAR _metric = SELECTEDVALUE(MetricSelector[Metric])
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    _metric = "Ist", [Buchungsbetrag],
+			    _metric = "Budget", [Buchungsbetrag_Bu],
+			    _metric = "Vorjahr", [GuV PY],
+			    _metric = "Delta Budget", [Delta Budget],
+			    _metric = "Delta PY", [Delta PY],
+			    _metric = "Delta % BG", [Delta BG %],
+			    _metric = "Delta % PY", [Delta PY %],
+			    BLANK()
+			)
+			
+			```
+		lineageTag: f42182e4-6e43-4157-9d37-c10156ea15e6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Selected Metric Value %' = ```
+			
+			VAR _metric = SELECTEDVALUE(MetricSelector[Metric])
+			VAR _value =
+			    SWITCH(
+			        TRUE(),
+			        _metric = "Ist", [Buchungsbetrag],
+			        _metric = "Budget", [Buchungsbetrag_Bu],
+			        _metric = "Vorjahr", [GuV PY],
+			        _metric = "Delta Budget", [Delta Budget],
+			        _metric = "Delta PY", [Delta PY],
+			        _metric = "Delta % BG", [Delta BG %],
+			        _metric = "Delta % PY", [Delta PY %],
+			        BLANK()
+			    )
+			RETURN
+			IF(
+			    _metric IN {"Delta % BG", "Delta % PY"},
+			    FORMAT(_value, "0.00%"),
+			    _value
+			)
+			
+			```
+		lineageTag: c05082b7-47e8-4796-9a9b-8f77465bebd3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delta BG %' = ```
+			DIVIDE(([Buchungsbetrag]-[Buchungsbetrag_Bu]),[Buchungsbetrag],BLANK()) 
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 34bd7d81-adde-4fd6-899c-64313d237dd3
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column Ist/Budget
+		dataType: string
+		lineageTag: c6ab3d64-c667-40f4-a464-4d0692283490
+		summarizeBy: none
+		sourceColumn: Ist/Budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsnummer
+		dataType: string
+		lineageTag: 654ce1b6-854b-4e2c-8c7d-2e3115f3c7a4
+		summarizeBy: none
+		sourceColumn: buchungsnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7081226d-f407-4fee-97f2-36b53313bb5c
+		summarizeBy: none
+		sourceColumn: buchungsdatum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column buchungstext
+		dataType: string
+		lineageTag: 1cc44fc0-867d-45d4-b4de-6d9076c3c47d
+		summarizeBy: none
+		sourceColumn: buchungstext
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 248f4871-4773-426c-b16d-ab256e772797
+		summarizeBy: none
+		sourceColumn: sachkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column personenkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 159b19c4-0284-42cc-bb34-4b720b3bc7ce
+		summarizeBy: sum
+		sourceColumn: personenkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column soll
+		dataType: double
+		lineageTag: a6dfe129-c194-477a-b2fe-97768a8e6860
+		summarizeBy: sum
+		sourceColumn: soll
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column haben
+		dataType: double
+		lineageTag: 65fffcd0-8686-417f-866f-2709cde24397
+		summarizeBy: sum
+		sourceColumn: haben
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column betrag
+		dataType: double
+		lineageTag: 0eca3b7c-f64b-422a-8d8e-81facd2f81ea
+		summarizeBy: sum
+		sourceColumn: betrag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column kostenstellen
+		dataType: string
+		lineageTag: c689cf17-9822-44e8-b994-5edd95383e6c
+		summarizeBy: none
+		sourceColumn: kostenstellen
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Buchungen = m
+		mode: import
+		queryGroup: Fact_Table
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis = Source{[Schema="dbo",Item="buchungen_basis"]}[Data],
+				    #"Changed Type2" = Table.TransformColumnTypes(dbo_buchungen_basis,{{"master_id", Int64.Type}, {"buchungsnummer", type text}, {"erstellungsdatum", type datetime}, {"buchungsdatum", type date}, {"buchungsperiode", type text}, {"externes_belegdatum", type date}, {"externe_belegnummer", type text}, {"interne_belegnummer", type text}, {"buchungstext", type text}, {"sachkonto", Int64.Type}, {"sachkontoname", type text}, {"personenkonto", Int64.Type}, {"personenkontoname", type text}, {"kontaktname", type text}, {"soll", type number}, {"haben", type number}, {"betrag", type number}, {"steuersatz", Int64.Type}, {"steuerschlüssel", type text}, {"kostenstellen", type text}, {"kostenstellen_und_name", type text}, {"belegdatei", type text}, {"eingangsrechnung", type text}, {"ausgangsrechnung", type text}, {"kassenbewegung", type text}, {"buchungsart", type text}, {"buchungsart_beschreibung", type text}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type2",{"buchungsnummer", "buchungsdatum", "buchungstext", "sachkonto", "personenkonto", "soll", "haben", "betrag", "kostenstellen"}),
+				    #"Added Custom" = Table.AddColumn(#"Removed Other Columns", "Ist/Budget", each "Ist"),
+				    #"Appended Query" = Table.Combine({#"Added Custom", buchungen_budget}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Appended Query",{{"buchungsdatum", type date}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

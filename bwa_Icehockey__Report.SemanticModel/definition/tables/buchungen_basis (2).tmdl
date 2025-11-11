@@ -1,0 +1,147 @@
+table 'buchungen_basis (2)'
+	lineageTag: 3a667c40-f31e-4c6c-a8bd-6fc52d0ff4f8
+
+	column master_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f3fda17-693a-439b-9e33-03c5a8639f33
+		summarizeBy: sum
+		sourceColumn: master_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsnummer
+		dataType: string
+		lineageTag: df1b6214-1d23-49fa-8c95-5495092f3279
+		summarizeBy: none
+		sourceColumn: buchungsnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column erstellungsdatum
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1343a928-872e-42e7-ae30-9cc770ebbeaa
+		summarizeBy: none
+		sourceColumn: erstellungsdatum
+
+		variation Variation
+			isDefault
+			relationship: 8c0338c7-495d-4ae1-aea5-6dce4d9c5604
+			defaultHierarchy: LocalDateTable_957267eb-ec7c-4df3-8df5-5eb6db6fdc6a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungstext
+		dataType: string
+		lineageTag: 4fbf6b3d-2fee-4ca7-83d6-ae77d6050c73
+		summarizeBy: none
+		sourceColumn: buchungstext
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 070e46dd-c231-442f-8f3a-09f6faffc5ad
+		summarizeBy: sum
+		sourceColumn: sachkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column sachkontoname
+		dataType: string
+		lineageTag: 7118f0d2-0a55-4b73-b67c-2371f25b49f6
+		summarizeBy: none
+		sourceColumn: sachkontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column personenkonto
+		dataType: int64
+		formatString: 0
+		lineageTag: 53435efa-466c-40ab-94a7-bf9bec77516f
+		summarizeBy: sum
+		sourceColumn: personenkonto
+
+		annotation SummarizationSetBy = Automatic
+
+	column personenkontoname
+		dataType: string
+		lineageTag: 018e8abe-8872-4b9e-9495-1d18c7a3c806
+		summarizeBy: none
+		sourceColumn: personenkontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column soll
+		dataType: double
+		lineageTag: 17e57243-0945-467f-af52-06921eaf7a26
+		summarizeBy: sum
+		sourceColumn: soll
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column haben
+		dataType: double
+		lineageTag: 8ba07284-fa0e-4575-bd9a-a22e6b76f11f
+		summarizeBy: sum
+		sourceColumn: haben
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column betrag
+		dataType: double
+		lineageTag: 7e5032b7-1445-41f3-bb13-307a91b20245
+		summarizeBy: sum
+		sourceColumn: betrag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column kostenstellen_und_name
+		dataType: string
+		lineageTag: 48f89296-4bbd-4eda-8c25-9b59314dc317
+		summarizeBy: none
+		sourceColumn: kostenstellen_und_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column eingangsrechnung
+		dataType: int64
+		formatString: 0
+		lineageTag: d4ab8f86-ad29-4f83-bf9f-7633750a3007
+		summarizeBy: sum
+		sourceColumn: eingangsrechnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column ausgangsrechnung
+		dataType: string
+		lineageTag: 22990e7a-b269-4362-a4a9-d98f0db38fa1
+		summarizeBy: none
+		sourceColumn: ausgangsrechnung
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'buchungen_basis (2)' = m
+		mode: import
+		queryGroup: Master_Table
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis = Source{[Schema="dbo",Item="buchungen_basis"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_buchungen_basis,{"master_id", "buchungsnummer", "erstellungsdatum", "buchungstext", "sachkonto", "sachkontoname", "personenkonto", "personenkontoname", "soll", "haben", "betrag", "kostenstellen_und_name", "eingangsrechnung", "ausgangsrechnung"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Other Columns",{{"master_id", Int64.Type}, {"buchungsnummer", type text}, {"erstellungsdatum", type datetime}, {"buchungstext", type text}, {"sachkonto", Int64.Type}, {"sachkontoname", type text}, {"personenkonto", Int64.Type}, {"personenkontoname", type text}, {"soll", type number}, {"haben", type number}, {"betrag", type number}, {"kostenstellen_und_name", type text}, {"eingangsrechnung", Int64.Type}, {"ausgangsrechnung", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

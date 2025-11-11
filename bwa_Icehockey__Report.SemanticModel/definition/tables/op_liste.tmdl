@@ -1,0 +1,167 @@
+table op_liste
+	lineageTag: 22753525-b81a-4ee9-aebd-acbec09fdd9e
+
+	column master_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 68e3b1b2-112d-4e95-90b9-8c76e2d83348
+		summarizeBy: sum
+		sourceColumn: master_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column belegnummer
+		dataType: string
+		lineageTag: e7343498-e0fc-4a8f-b1a3-62c6bf51dc18
+		summarizeBy: none
+		sourceColumn: belegnummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontonummer
+		dataType: int64
+		formatString: 0
+		lineageTag: 28e516ae-c4bd-4ae7-8c33-a91fd4b53f5f
+		summarizeBy: sum
+		sourceColumn: kontonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontobezeichnungn
+		dataType: string
+		lineageTag: 6a4aa7eb-af0c-4924-8028-24f7bcedc9c5
+		summarizeBy: none
+		sourceColumn: kontobezeichnungn
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 20e4487a-4b79-4521-9763-4829c26208a2
+		summarizeBy: none
+		sourceColumn: buchungsdatum
+
+		variation Variation
+			isDefault
+			relationship: df432a38-8851-42dd-bb55-8c170c4e1249
+			defaultHierarchy: LocalDateTable_33dd39ba-5952-440f-bfbd-2ce1695cd588.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column belegdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ee20c0a8-cf40-429f-b3df-c4dc2a917d11
+		summarizeBy: none
+		sourceColumn: belegdatum
+
+		variation Variation
+			isDefault
+			relationship: 09b4fe7c-1cdd-4e9d-9e6e-5931eecaa252
+			defaultHierarchy: LocalDateTable_b71d316b-791c-4fef-baf0-8ac27695df9b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column erstellt_am
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d833ded5-485b-406c-aa61-279fadc97b92
+		summarizeBy: none
+		sourceColumn: erstellt_am
+
+		variation Variation
+			isDefault
+			relationship: 57cca01a-eb98-422c-9bd2-f0d0d2b7c48f
+			defaultHierarchy: LocalDateTable_72739641-0fc7-4122-a0c7-d154750758c2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fälligkeitsdatum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 82b8b047-e6e7-4964-97a2-90b061de71f3
+		summarizeBy: none
+		sourceColumn: fälligkeitsdatum
+
+		variation Variation
+			isDefault
+			relationship: bfc5e82d-d9b2-4c9c-8b3a-555a20d56d43
+			defaultHierarchy: LocalDateTable_0f275fa5-a743-4b40-a1d5-3dd164a2551c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column betrag
+		dataType: double
+		lineageTag: 1af08618-5742-41bf-b723-812cd99ceca2
+		summarizeBy: sum
+		sourceColumn: betrag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column offener_betrag
+		dataType: string
+		lineageTag: 9768bf35-da9b-44e4-812d-30c07121398b
+		summarizeBy: none
+		sourceColumn: offener_betrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column sollbetrag
+		dataType: string
+		lineageTag: 454c7a25-860a-41c3-ac12-71f5be2499b5
+		summarizeBy: none
+		sourceColumn: sollbetrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column habenbetrag
+		dataType: string
+		lineageTag: 87082364-060a-40e6-8a3e-9f24d97be23a
+		summarizeBy: none
+		sourceColumn: habenbetrag
+
+		annotation SummarizationSetBy = Automatic
+
+	column buchungstext
+		dataType: string
+		lineageTag: 3562744c-6159-4533-a98d-b35d34885ff5
+		summarizeBy: none
+		sourceColumn: buchungstext
+
+		annotation SummarizationSetBy = Automatic
+
+	column zahlungsart_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 87e87ed3-8bb8-41bb-8de3-7ac7619ce1f3
+		summarizeBy: sum
+		sourceColumn: zahlungsart_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition op_liste = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_op_list = Source{[Schema="dbo",Item="op_list"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_op_list,{{"master_id", Int64.Type}, {"belegnummer", type text}, {"kontonummer", Int64.Type}, {"kontobezeichnungn", type text}, {"buchungsdatum", type date}, {"belegdatum", type date}, {"erstellt_am", type date}, {"fälligkeitsdatum", type date}, {"betrag", type number}, {"offener_betrag", type text}, {"sollbetrag", type text}, {"habenbetrag", type text}, {"buchungstext", type text}, {"zahlungsart_id", Int64.Type}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each true)
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

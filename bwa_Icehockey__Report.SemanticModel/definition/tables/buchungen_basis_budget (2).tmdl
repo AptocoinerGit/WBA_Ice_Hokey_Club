@@ -1,0 +1,118 @@
+table 'buchungen_basis_budget (2)'
+	lineageTag: 360f2b51-4e3e-4b4e-878d-619fe37b4a3c
+
+	column finanzplanung
+		dataType: string
+		lineageTag: 7dd66395-0ca2-41c2-a77d-9e596d074955
+		summarizeBy: none
+		sourceColumn: finanzplanung
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontonummer
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d81bb0c-6b2a-46b5-9f97-be73c873971b
+		summarizeBy: sum
+		sourceColumn: kontonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column kontobezeichnung
+		dataType: string
+		lineageTag: 74925514-17db-4a34-bc9d-1b6f152e121e
+		summarizeBy: none
+		sourceColumn: kontobezeichnung
+
+		annotation SummarizationSetBy = Automatic
+
+	column dimension
+		dataType: string
+		lineageTag: d744695b-2c85-4b2b-a662-88b78c0ac5cb
+		summarizeBy: none
+		sourceColumn: dimension
+
+		annotation SummarizationSetBy = Automatic
+
+	column dimensionskontonummer
+		dataType: string
+		lineageTag: fd14b533-b7ec-44cb-badd-a264079a9b3e
+		summarizeBy: none
+		sourceColumn: dimensionskontonummer
+
+		annotation SummarizationSetBy = Automatic
+
+	column dimensionskontoname
+		dataType: string
+		lineageTag: f87c6408-48b5-424a-a7bf-fbb6abcd75a5
+		summarizeBy: none
+		sourceColumn: dimensionskontoname
+
+		annotation SummarizationSetBy = Automatic
+
+	column von
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fe4f2bf8-18fa-44ad-9264-9a969554d2dd
+		summarizeBy: none
+		sourceColumn: von
+
+		variation Variation
+			isDefault
+			relationship: 323faa32-0d8b-4ea4-9044-ed2eba724571
+			defaultHierarchy: LocalDateTable_05b92b64-98b7-4b95-8c77-2b7506e3b123.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column bis
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 46945bdc-6ce2-4487-8e94-8dc158a08ae2
+		summarizeBy: none
+		sourceColumn: bis
+
+		variation Variation
+			isDefault
+			relationship: aaf8e433-341f-41c4-a5b2-5639bf4fb475
+			defaultHierarchy: LocalDateTable_d5b02c9f-7095-4384-86c4-2d12e45f4de1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column soll
+		dataType: double
+		lineageTag: ca5daa0d-a7f6-4ddc-89a9-54a3e50f7900
+		summarizeBy: sum
+		sourceColumn: soll
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column haben
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d61425c-ecf9-4a84-846b-8cceef817b6d
+		summarizeBy: sum
+		sourceColumn: haben
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'buchungen_basis_budget (2)' = m
+		mode: import
+		queryGroup: Master_Table
+		source =
+				let
+				    Source = Sql.Database("ossak5xipqoubkgqopiawwyvhe-jhr7mosaqa5urewk2yeus4croa.datawarehouse.fabric.microsoft.com", "BWA_Ice_hockey_LH"),
+				    dbo_buchungen_basis_budget = Source{[Schema="dbo",Item="buchungen_basis_budget"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_buchungen_basis_budget,{{"finanzplanung", type text}, {"kontonummer", Int64.Type}, {"kontobezeichnung", type text}, {"dimension", type text}, {"dimensionskontonummer", type text}, {"dimensionskontoname", type text}, {"von", type date}, {"bis", type date}, {"soll", type number}, {"haben", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

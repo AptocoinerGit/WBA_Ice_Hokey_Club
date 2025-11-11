@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "bwa_Icehockey__Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "49d20302-e9d4-ab84-44f8-f988f3e82561"
+  }
+}

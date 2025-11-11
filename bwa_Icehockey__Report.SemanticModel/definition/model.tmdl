@@ -1,0 +1,57 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup Fact_Table
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup Master_Table
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup DimTable
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["buchungen_budget","Buchungen","kontakte","kreditoren","bwa_gliederung","op_liste","kreditoren_gesamtumsatz","buchungen_basis (2)","buchungen_basis_budget (2)","DIM_Sachkonten","buchungen_basis_DIm","scrbwa_gliederung"]
+
+ref table Buchungen
+ref table buchungen_budget
+ref table bwa_gliederung
+ref table kontakte
+ref table kreditoren
+ref table op_liste
+ref table scrbwa_gliederung
+ref table kreditoren_gesamtumsatz
+ref table 'buchungen_basis (2)'
+ref table DateTableTemplate_5ea13410-d3c0-4c87-b665-246ddf403cca
+ref table 'buchungen_basis_budget (2)'
+ref table DIM_Sachkonten
+ref table buchungen_basis_DIm
+ref table DimDate
+ref table LocalDateTable_ac6addd1-3aae-4c33-bf0c-488c1694ab88
+ref table MetricSelector
+ref table LocalDateTable_223fc5d4-21bb-4a8b-9ad2-37e9a1830429
+ref table LocalDateTable_60300a5e-33d8-484e-beb1-bd966cb2984e
+ref table LocalDateTable_7e7eef29-c7ab-4aad-a186-cb67b8e84e2e
+ref table LocalDateTable_33dd39ba-5952-440f-bfbd-2ce1695cd588
+ref table LocalDateTable_b71d316b-791c-4fef-baf0-8ac27695df9b
+ref table LocalDateTable_72739641-0fc7-4122-a0c7-d154750758c2
+ref table LocalDateTable_0f275fa5-a743-4b40-a1d5-3dd164a2551c
+ref table LocalDateTable_fcf47397-a376-4234-8fa7-3664cd12a0ee
+ref table LocalDateTable_9f20e394-4089-4567-86ef-e5bfdaab298e
+ref table LocalDateTable_eb6e3d34-6d53-4bcd-951a-ea517f8ea2bc
+ref table LocalDateTable_976c6bfe-5111-4cce-915b-ae93284cbb52
+ref table LocalDateTable_957267eb-ec7c-4df3-8df5-5eb6db6fdc6a
+ref table LocalDateTable_05b92b64-98b7-4b95-8c77-2b7506e3b123
+ref table LocalDateTable_d5b02c9f-7095-4384-86c4-2d12e45f4de1
+
+ref cultureInfo en-US
+

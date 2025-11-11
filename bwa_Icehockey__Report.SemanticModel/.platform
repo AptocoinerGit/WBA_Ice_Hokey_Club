@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "bwa_Icehockey__Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "47de80d1-8bb0-9719-4329-7292ff65af5a"
+  }
+}
