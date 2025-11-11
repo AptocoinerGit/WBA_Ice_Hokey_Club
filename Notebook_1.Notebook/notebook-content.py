@@ -899,3 +899,156 @@ for t in tables:
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# CELL ********************
+
+import pandas as pd
+import requests
+from io import StringIO, BytesIO
+from pyspark.sql import SparkSession
+
+# Initialize Spark session
+spark = SparkSession.builder.getOrCreate()
+
+# --- 🔧 Table configuration ---
+tables = [
+    {"name": "buchungen_basisdropbox",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6obumvsggnrqmuwtimrwmuwtizdegqwweodgmywtaztcgzswenjrmqydomy/Buchungen_Basis.html"},
+    {"name": "op_list11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6y3emeytombxgqwwiyleguwtizbwmywwenrxmuwtczjrmy3tenbxguygimi/OP_Liste.html"},
+    {"name": "kreditoren_gesamtumsatz_11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6mbugbsdknjymywtiyjvgewtimbwguwtqojxmiwtcmbtmu3wmzlemqzdmzq/Kreditoren_Gesamtumsatz_.html"},
+    {"name": "kontaktedropbox",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6obvgfrgcnlggywweodfhawtiyzvgewtqmzwgqwtinrqmnrtsmlbgazwkma/Kontakte.html"},
+    {"name": "kreditoren11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6nztgqydomrsg4wtsntgmywtinzwgawtsnbygqwtcmrqgfsdkmzwgntgkzq/Kreditoren.html"},
+    {"name": "Buchungen_Basis_Budget11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6mrtgvsdsn3bmiwtmndgguwtizjrg4wwcmlegywwczbrgzrwknjvhbtdcyy/Buchungen_Basis_Budget.html"},
+    {"name": "BWA_Gliederung11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6m3cgiygczlbg4wtgztdhewtimzwmiwtsytfhewtmojvguytonjymyytkoa/BWA_Gliederung.html"},
+    {"name": "SCRBWA_Gliederung11",
+     "url": "https://appload.scopevisio.com/datasource/giydinbuhe4s6mjxf52xgzlsl42demjtmjqtcmjnmmzdcmzngqydonjnhfstkzbngjtdozjrgbsggmlggnsc6zbygfrdgmrqmiwtcmrtmuwtizbthewwcmrqgqwwcndbmiydmytfgy4doma/SCRBWA_Gliederung.html"}
+]
+
+# ---  Credentials ---
+username = "test"
+password = "test"
+
+# ---  Cleaning Function ---
+def clean_dataframe(df):
+    """Clean column names and values for Spark safety."""
+    
+    # Step 1️: Clean & make column names unique (Spark-safe)
+    def clean_column_names(cols):
+        seen = {}
+        new_cols = []
+        for c in cols:
+            new_c = (
+                str(c)
+                .strip()
+                .lower()
+                .replace(" ", "_")
+                .replace("-", "_")
+            )
+            new_c = ''.join(ch for ch in new_c if ch.isalnum() or ch == "_")
+            if new_c in seen:
+                seen[new_c] += 1
+                new_cols.append(f"{new_c}_{seen[new_c]}")
+            else:
+                seen[new_c] = 0
+                new_cols.append(new_c)
+        return new_cols
+
+    df.columns = clean_column_names(df.columns)
+
+    # Step 2️: Replace infinities & NaNs
+    df = df.replace([float("inf"), float("-inf")], pd.NA).fillna("")
+
+    # Step 3️: Convert numeric columns (common accounting fields)
+    for col in ["soll", "haben", "betrag"]:
+        if col in df.columns:
+            df[col] = (
+                df[col].astype(str)
+                .str.replace(".", " ", regex=False)  #this transformation is for indian calc. but not german remove it in deployment
+                .str.replace(",", ".", regex=False)  #this transformation is for indian calc. but not german remove it in deployment
+            )
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+    # Step 4️: Convert all columns to string
+    df = df.astype(str)
+
+    return df
+
+
+# ---  Process each table ---
+for t in tables:
+    print(f"\n{'='*60}")
+    print(f" Processing table: {t['name']}")
+    print(f"{'='*60}")
+
+    try:
+        # Step 1️ — Fetch file
+        response = requests.get(t["url"], auth=(username, password))
+        response.raise_for_status()
+        print(response.raise_for_status())
+
+        # Step 2️ — Try CSV, fallback to HTML
+        try:
+            df = pd.read_csv(StringIO(response.text), sep=';', encoding='latin1')
+            print(" Loaded as CSV format")
+        except Exception:
+            print(" Could not read as CSV — trying as HTML...")
+            try:
+                df = pd.read_html(BytesIO(response.content), header=0, encoding="utf-8")[0]
+                print(" Loaded as HTML table")
+            except UnicodeDecodeError:
+                df = pd.read_html(BytesIO(response.content), header=0, encoding="latin1")[0]
+                print("Loaded as HTML (latin1 fallback)")
+
+        print(f" Rows fetched: {len(df)}")
+
+        # Step 3️ — Clean data
+        df = clean_dataframe(df)
+
+        # Step 4️ — Convert to Spark DataFrame
+        sdf = spark.createDataFrame(df)
+
+        # Step 5️ — Find key column dynamically
+        key_col = None
+        for possible_key in ["masterid", "kontakt_masterid", "master_id","kontakt_master_id"]:
+            if possible_key in df.columns:
+                key_col = possible_key
+                break
+ 
+        # Step 6️ — Load logic
+        if spark.catalog.tableExists(t["name"]):
+            print(f"Table {t['name']} already exists")
+            if key_col:
+                existing_keys = spark.table(t["name"]).select(key_col)
+                new_records = sdf.join(existing_keys, on=key_col, how="left_anti")
+                new_count = new_records.count()
+
+                if new_count > 0:
+                    print(f"Found {new_count} new records — appending...")
+                    new_records.write.mode("append").saveAsTable(t["name"])
+                else:
+                    print(" No new records found. Table up to date.")
+            else:
+                print(" No key column found — overwriting table.")
+                sdf.write.mode("overwrite").saveAsTable(t["name"])
+        else:
+            print(f" Table not found — creating new table...")
+            sdf.write.mode("overwrite").saveAsTable(t["name"])
+
+        print(f" Load completed for {t['name']} ({sdf.count()} records)")
+
+    except Exception as e:
+        print(f" Error processing {t['name']}: {e}")
+
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
